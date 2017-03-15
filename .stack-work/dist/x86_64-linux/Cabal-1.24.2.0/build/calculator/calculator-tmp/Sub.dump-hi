@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-15 10:34:01.381035 UTC
+2017-03-15 10:51:17.73036 UTC
 
 interface main@main:Sub 8002
-  interface hash: c867da9c51ab574f309fe75335edd60e
+  interface hash: 568f5d299aa8ac1609ff8ac0411d8dc9
   ABI hash: 186489adaf04fc422c2a2dae960ebac5
   export-list hash: d728ee3b75c11db1000ca1de45278532
   orphan hash: dc7f7a6863361a01a54efe13bc2b5487
@@ -13,7 +13,7 @@ interface main@main:Sub 8002
   where
 exports:
   Sub.getSubR
-module dependencies: Foundation
+module dependencies: Calc Foundation
 package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
                       ansi-terminal-0.6.2.3@ansi-terminal-0.6.2.3-4HPxin1iv6RAndS8lH3nzo
                       appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
@@ -154,7 +154,7 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8
                          ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
                          iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Addr
                          iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Range
-                         main@main:Foundation
+                         main@main:Calc main@main:Foundation
                          monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5:Control.Monad.Trans.Control
                          monad-logger-0.3.20.2@monad-logger-0.3.20.2-B79xNS1OLE07RmfN9nQT1y:Control.Monad.Logger
                          mwc-random-0.13.5.0@mwc-random-0.13.5.0-Dp3Ri46ZxJuCFZWIowNqha:System.Random.MWC
@@ -179,13 +179,16 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8
                          yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Types
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU:Data.Aeson.Types.Internal 191d33684f4c3e32b3ae2a5b57ebb6b4
-import  -/  aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU:Data.Aeson.Types.ToJSON e53f43051bb77ea718c22d27eb28abcb
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy:Text.Blaze.Html 288dbf097dbd0ff17b50c3c1330477db
 import  -/  blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT:Text.Blaze.Internal 52ba665013f4dfa6d731e8584348806e
+import  -/  Calc 468c3216f3dbededab7a6e1021bc8e82
+  exports: 100d0a73c6c16e40617714fbb2e3262e
+  Calculation da0ab53d6e1fe47dacc2b5c2cd169eda
+  Minus 7f996d13122f941d9e5645e540a67aae
 import  -/  Foundation 3615fb1983cc7b6b55ded8cf18378edf
   exports: ded409159e04845416e78440edda8f02
   Handler b653624404f7ececddd0ff905d16f39a
