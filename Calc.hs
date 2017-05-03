@@ -13,11 +13,11 @@ instance ToJSON Op where
   toJSON Multiply = toJSON "*"
   toJSON Divide = toJSON "/"
 
-data Calculation = Calculation {
+data Calc = Calc {
   lOperand :: Int,
   rOperand :: Int,
   operator :: Op,
   result :: Double
 } deriving (Generic)
 
-instance ToJSON Calculation
+instance ToJSON Calc

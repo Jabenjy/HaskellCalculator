@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-05-03 09:35:04.270724 UTC
+2017-05-03 22:23:08.768327 UTC
 
 interface main@main:Home 8002
-  interface hash: 0ab652119afc4c3a762d4f75a570f622
-  ABI hash: fa1f46b444ee5af81d2577185d706a38
+  interface hash: ea32f0458d00fc28337a9a2e5b3211e2
+  ABI hash: 5e89e604c195e3d9017fd0ce0739cc27
   export-list hash: 2f7a09a307dc317e0ec0bc852e8c1a09
   orphan hash: b22609f71def34e0f06cf4e592b45764
   flag hash: 0c166353a54cf00f9d34716f58e85a92
@@ -209,14 +209,13 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8
                          yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Types
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
-import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy:Text.Blaze.Html 288dbf097dbd0ff17b50c3c1330477db
 import  -/  blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT:Text.Blaze.Internal 52ba665013f4dfa6d731e8584348806e
-import  -/  DBHandler 0a8dc8ef011ea226c9a556c8dd9b1b27
-  exports: dabfc40e39b24cead7b408fdbb2aff06
-  selectDB 811311d229f0cc5f8de506a08a82b36b
+import  -/  DBHandler a64d9c3f2f68da5f98e0b334eff69372
+  exports: 8432cdc67a6853e11e3029a0eef21fac
+  selectDB 5da702999d653234372c8828874f9643
 import  -/  Foundation 7c5cb8d2d2f81f02c1aee84cd8055328
   exports: 5c8ce7014e92ff7a92a617890109b189
   AddR d2ae7c5e6e92879ef3bf0f000ab55b3c
@@ -261,14 +260,14 @@ e35773aa1da5e1627414fd9c083505d9
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-371814065cdbc692c7e947a1bef2390b
+e50e524fdfd64a60c8c4ed39c9ab9397
   getCalcsR :: Foundation.Handler Text.Blaze.Html.Html
   {- Unfolding: (Foundation.$fYesodApp_$cdefaultLayout
                    Home.getCalcsR1
                      `cast`
                    (Sym (Yesod.Core.Types.N:WidgetT[0]
                              <Foundation.App>_N <GHC.Types.IO>_N <()>_N))) -}
-808f549da6bea1e9f73554cec91922a3
+b050af4c2e77538c31bd1f9c1d2cff16
   getCalcsR1 ::
     Yesod.Core.Types.HandlerData
       Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -284,7 +283,7 @@ e35773aa1da5e1627414fd9c083505d9
                    GHC.Base.$fMonadIO
                    @ ()
                    @ ()
-                   Home.getCalcsR12
+                   Home.getCalcsR9
                      `cast`
                    (Trans
                         (<Yesod.Core.Types.HandlerData
@@ -302,35 +301,22 @@ e35773aa1da5e1627414fd9c083505d9
                    Home.getCalcsR2
                      `cast`
                    (<()>_R
-                    ->_R Sym (Yesod.Core.Types.N:WidgetT[0]
-                                  <Foundation.App>_N <GHC.Types.IO>_N <()>_N))
+                    ->_R Trans
+                             (<Yesod.Core.Types.HandlerData
+                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            ((,)
+                                               <()>_R
+                                               (Yesod.Core.Types.GWData
+                                                  (Yesod.Routes.Class.Route
+                                                     (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
+                                                               <GHC.Types.IO>_N
+                                                               <Foundation.App>_N)))_R)_R)_R))
+                             (Sym (Yesod.Core.Types.N:WidgetT[0]
+                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
                    eta) -}
-43307b74708e8b31a17a4ac4ebf2c343
-  getCalcsR10 :: Text.Blaze.Internal.ChoiceString
-  {- Unfolding: (Text.Blaze.Internal.Text Home.getCalcsR11) -}
-c8cf48c89e7043eb4724bf1bae2d68f0
-  getCalcsR11 :: Data.Text.Internal.Text
-  {- Unfolding: (Data.Text.Show.unpackCString#
-                   "<p>Hello</p></p>\n"#) -}
-603ee9d4f80385294a8fd4e92407a391
-  getCalcsR12 ::
-    Yesod.Core.Types.HandlerData
-      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          ((),
-           Yesod.Core.Types.GWData
-             (Yesod.Routes.Class.Route
-                (Yesod.Core.Class.Handler.HandlerSite
-                   (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
-  {- Arity: 2, Strictness: <L,A>,
-     Unfolding: InlineRule (1, True, True)
-                (\ (eta1 :: Yesod.Core.Types.HandlerData
-                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Home.getCalcsR13 eta) -}
-800b55a22868fda85e9a64d6969e13a6
-  getCalcsR13 ::
+0be4868604826b623847e3709031ac37
+  getCalcsR10 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           ((),
@@ -340,17 +326,17 @@ c8cf48c89e7043eb4724bf1bae2d68f0
                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (# s, Home.getCalcsR14 #)) -}
-400a6cd01a6e935180441a9d84bf8003
-  getCalcsR14 ::
+                 (# s, Home.getCalcsR11 #)) -}
+71dfd33398948fb3b2732259f4f73213
+  getCalcsR11 ::
     ((),
      Yesod.Core.Types.GWData
        (Yesod.Routes.Class.Route
           (Yesod.Core.Class.Handler.HandlerSite
              (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO))))
-  {- Unfolding: ((GHC.Tuple.(), Home.getCalcsR15)) -}
-7512910ac88b69231b1f94a1816dcdcd
-  getCalcsR15 ::
+  {- Unfolding: ((GHC.Tuple.(), Home.getCalcsR12)) -}
+e3201441fb0df5ec91b06ff6fb96f77d
+  getCalcsR12 ::
     Yesod.Core.Types.GWData
       (Yesod.Routes.Class.Route
          (Yesod.Core.Class.Handler.HandlerSite
@@ -368,7 +354,7 @@ c8cf48c89e7043eb4724bf1bae2d68f0
                              <Yesod.Routes.Class.Route
                                 (Yesod.Core.Class.Handler.HandlerSite
                                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO))>_R))
-                   Home.getCalcsR16
+                   Home.getCalcsR13
                      `cast`
                    (Sym (Data.Monoid.N:Last[0]) <Yesod.Core.Types.Title>_N)
                    (GHC.Base.id
@@ -417,71 +403,24 @@ c8cf48c89e7043eb4724bf1bae2d68f0
                              <Yesod.Routes.Class.Route
                                 (Yesod.Core.Class.Handler.HandlerSite
                                    (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO))>_R))) -}
-fc9aedef26a4dcadbeced0fd5e69e575
-  getCalcsR16 :: GHC.Base.Maybe Yesod.Core.Types.Title
+f163a81cc5df4a2e69bb040a80b3c479
+  getCalcsR13 :: GHC.Base.Maybe Yesod.Core.Types.Title
   {- Unfolding: (GHC.Base.Just
                    @ Yesod.Core.Types.Title
-                   Home.getCalcsR17 `cast` (Sym (Yesod.Core.Types.N:Title[0]))) -}
-feb34b93f41c8e1d74b29599ea5f1983
-  getCalcsR17 :: Text.Blaze.Internal.MarkupM ()
+                   Home.getCalcsR14 `cast` (Sym (Yesod.Core.Types.N:Title[0]))) -}
+d3bb52f7d9041ef02498f30d8903cf7f
+  getCalcsR14 :: Text.Blaze.Internal.MarkupM ()
   {- Unfolding: (Text.Blaze.Internal.Content
                    @ ()
-                   Home.getCalcsR18) -}
-709f91521a09f8e5dcea368af1ddfad7
-  getCalcsR18 :: Text.Blaze.Internal.ChoiceString
-  {- Unfolding: (Text.Blaze.Internal.String Home.getCalcsR19) -}
-9be60fb6e807ce5372ea104e2dbacfae
-  getCalcsR19 :: [GHC.Types.Char]
+                   Home.getCalcsR15) -}
+626e3e672a96a6068a5c38f1276ae09f
+  getCalcsR15 :: Text.Blaze.Internal.ChoiceString
+  {- Unfolding: (Text.Blaze.Internal.String Home.getCalcsR16) -}
+49dce54d89521cda27f1d559bfbb7784
+  getCalcsR16 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "History"#) -}
-f746138bdef70e81c624f5597d9cf578
+8e6b58f9576a4a43cd3592f4f676ebbb
   getCalcsR2 ::
-    ()
-    -> Yesod.Core.Types.HandlerData
-         Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
-    -> GHC.Types.IO
-         ((),
-          Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App))
-  {- Arity: 2,
-     Unfolding: (\ (ds :: ())
-                   (eta :: Yesod.Core.Types.HandlerData
-                             Foundation.App
-                             (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot] ->
-                 Yesod.Core.Types.$fApplicativeWidgetT3
-                   @ GHC.Types.IO
-                   @ Foundation.App
-                   GHC.Base.$fMonadIO
-                   @ ()
-                   @ ()
-                   Home.getCalcsR4
-                     `cast`
-                   (Trans
-                        (<Yesod.Core.Types.HandlerData
-                            Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
-                         ->_R Sym (GHC.Types.N:IO[0]
-                                       ((,)
-                                          <()>_R
-                                          (Yesod.Core.Types.GWData
-                                             (Yesod.Routes.Class.Route
-                                                (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
-                                                          <GHC.Types.IO>_N
-                                                          <Foundation.App>_N)))_R)_R)_R))
-                        (Sym (Yesod.Core.Types.N:WidgetT[0]
-                                  <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                   Home.getCalcsR3
-                     `cast`
-                   (<()>_R
-                    ->_R Trans
-                             (<Yesod.Core.Types.HandlerData
-                                 Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)>_R
-                              ->_R Sym (GHC.Types.N:IO[0]
-                                            <((),
-                                              Yesod.Core.Types.GWData
-                                                (Yesod.Routes.Class.Route Foundation.App))>_R))
-                             (Sym (Yesod.Core.Types.N:WidgetT[0]
-                                       <Foundation.App>_N <GHC.Types.IO>_N <()>_N)))
-                   eta) -}
-0a1e428c4a5180d1b56617aaaedcc2e0
-  getCalcsR3 ::
     ()
     -> Yesod.Core.Types.HandlerData
          Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
@@ -489,67 +428,35 @@ f746138bdef70e81c624f5597d9cf578
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           ((),
            Yesod.Core.Types.GWData
-             (Yesod.Routes.Class.Route Foundation.App)) #)
+             (Yesod.Routes.Class.Route
+                (Yesod.Core.Class.Handler.HandlerSite
+                   (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
   {- Arity: 3,
      Unfolding: (\ (ds :: ())
                    (eta :: Yesod.Core.Types.HandlerData
                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))[OneShot]
                    (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case DBHandler.selectDB `cast` (GHC.Types.N:IO[0] <()>_R)
-                        eta1 of ds1 { (#,#) ipv ipv1 ->
-                 (# ipv,
-                    (ipv1,
-                     Yesod.Core.Types.$fApplicativeWidgetT_$cmempty
-                       @ (Yesod.Routes.Class.Route Foundation.App)) #) }) -}
-0be8f4a8e0feb22307145a00b51a9db3
-  getCalcsR4 ::
-    Yesod.Core.Types.HandlerData
-      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          ((),
-           Yesod.Core.Types.GWData
-             (Yesod.Routes.Class.Route
-                (Yesod.Core.Class.Handler.HandlerSite
-                   (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
-  {- Arity: 2, Strictness: <L,A>,
-     Unfolding: InlineRule (1, True, True)
-                (\ (eta1 :: Yesod.Core.Types.HandlerData
-                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
-                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 Home.getCalcsR5 eta) -}
-aee24f04bb99dbfa95005bdc346c0cba
-  getCalcsR5 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          ((),
-           Yesod.Core.Types.GWData
-             (Yesod.Routes.Class.Route
-                (Yesod.Core.Class.Handler.HandlerSite
-                   (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (# s, Home.getCalcsR6 #)) -}
-edcd24e90e4c6c389f919187785f140b
-  getCalcsR6 ::
+                 (# eta1, Home.getCalcsR3 #)) -}
+e60a639b157bd8d60101a61b2a7d17b1
+  getCalcsR3 ::
     ((),
      Yesod.Core.Types.GWData
        (Yesod.Routes.Class.Route
           (Yesod.Core.Class.Handler.HandlerSite
              (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO))))
   {- Unfolding: ((GHC.Tuple.(),
-                  Home.getCalcsR7
+                  Home.getCalcsR4
                     `cast`
                   (Yesod.Core.Types.GWData
                      (Yesod.Routes.Class.Route
                         (Sym (Yesod.Core.Class.Handler.D:R:HandlerSiteWidgetT[0]
                                   <GHC.Types.IO>_N <Foundation.App>_N)))_R)_R)) -}
-2c7167a7a45f136b1c229463cc8a57c2
-  getCalcsR7 ::
+e7a23daced9447ea61d95c528974b8ed
+  getCalcsR4 ::
     Yesod.Core.Types.GWData (Yesod.Routes.Class.Route Foundation.App)
   {- Unfolding: (Yesod.Core.Types.GWData
                    @ (Yesod.Routes.Class.Route Foundation.App)
-                   Home.getCalcsR8
+                   Home.getCalcsR5
                      `cast`
                    (Sym (Yesod.Core.Types.N:Body[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))
@@ -586,8 +493,8 @@ edcd24e90e4c6c389f919187785f140b
                      `cast`
                    (Sym (Yesod.Core.Types.N:Head[0]
                              <Yesod.Routes.Class.Route Foundation.App>_R))) -}
-52d25e3d9a28392c039ff001fb177533
-  getCalcsR8 ::
+f752b7d9b2bd61ecea7c34aa5ea87e1f
+  getCalcsR5 ::
     (Yesod.Routes.Class.Route Foundation.App
      -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
      -> Data.Text.Internal.Text)
@@ -597,12 +504,36 @@ edcd24e90e4c6c389f919187785f140b
                           -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
                           -> Data.Text.Internal.Text) ->
                  Home.getCalcsR_eta) -}
-96ac2cd5cf1621d07a9d2ad341d6e60b
-  getCalcsR9 :: Text.Blaze.Internal.ChoiceString
-  {- Unfolding: (Text.Blaze.Internal.PreEscaped Home.getCalcsR10) -}
-0d95690bc57031270e896835c1c2a06f
+622774ff6292f08fabcd60fc4346b6e3
+  getCalcsR6 :: Text.Blaze.Internal.ChoiceString
+  {- Unfolding: (Text.Blaze.Internal.PreEscaped Home.getCalcsR7) -}
+cab3f37fe28c8276d2fdeb8d5d716813
+  getCalcsR7 :: Text.Blaze.Internal.ChoiceString
+  {- Unfolding: (Text.Blaze.Internal.Text Home.getCalcsR8) -}
+987ff757c73944ba3e166c501a75048c
+  getCalcsR8 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   "<p>Hello</p></p>\n"#) -}
+a5d6681183a63be1bdec9c3907935ba0
+  getCalcsR9 ::
+    Yesod.Core.Types.HandlerData
+      Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((),
+           Yesod.Core.Types.GWData
+             (Yesod.Routes.Class.Route
+                (Yesod.Core.Class.Handler.HandlerSite
+                   (Yesod.Core.Types.WidgetT Foundation.App GHC.Types.IO)))) #)
+  {- Arity: 2, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (eta1 :: Yesod.Core.Types.HandlerData
+                              Foundation.App (Yesod.Core.Types.MonadRoute GHC.Types.IO))
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Home.getCalcsR10 eta) -}
+675fc682ac99a426d51ceca4d244c6ea
   getCalcsR_eta :: Text.Blaze.Html.Html
-  {- Unfolding: (Text.Blaze.Internal.Content @ () Home.getCalcsR9) -}
+  {- Unfolding: (Text.Blaze.Internal.Content @ () Home.getCalcsR6) -}
 5acfd65209e5319a7cb4e55c8dec0d4b
   getHomeR :: Foundation.Handler Text.Blaze.Html.Html
   {- Unfolding: (Foundation.$fYesodApp_$cdefaultLayout

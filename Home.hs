@@ -1,10 +1,20 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE QuasiQuotes       #-}
+{-# LANGUAGE TemplateHaskell   #-}
+{-# LANGUAGE TypeFamilies      #-}
+{-# LANGUAGE ViewPatterns      #-}
+{-# LANGUAGE QuasiQuotes           #-}
+{-# LANGUAGE EmptyDataDecls             #-}
+{-# LANGUAGE FlexibleContexts           #-}
+{-# LANGUAGE GADTs                      #-}
+{-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
 module Home where
 
 import Foundation
 import Yesod.Core
 import DBHandler
+import Text.Blaze
+
 
 getHomeR :: Handler Html
 getHomeR = defaultLayout $ do
@@ -19,5 +29,14 @@ getHomeR = defaultLayout $ do
 getCalcsR :: Handler Html
 getCalcsR = defaultLayout $ do
     setTitle "History"
-    [whamlet|<p>Hello</p>|]
-    liftIO $ selectDB
+    let calcs = selectDB
+    setTitle "History"
+    toWidget[whamlet|
+    <div>
+      $forall Calculation a b c d <- calcs
+        <dl>
+          <dt>#{show a}
+          <dt>#{show b}
+          <dt>#{show c}
+          <dt>#{show d}
+    |]

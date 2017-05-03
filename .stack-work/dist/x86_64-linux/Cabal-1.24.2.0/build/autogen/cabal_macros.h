@@ -21,6 +21,27 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package blaze-markup-0.7.1.1 */
+#define VERSION_blaze_markup "0.7.1.1"
+#define MIN_VERSION_blaze_markup(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  7 || \
+  (major1) == 0 && (major2) == 7 && (minor) <= 1)
+
+/* package http-types-0.9.1 */
+#define VERSION_http_types "0.9.1"
+#define MIN_VERSION_http_types(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  9 || \
+  (major1) == 0 && (major2) == 9 && (minor) <= 1)
+
+/* package monad-control-1.0.1.0 */
+#define VERSION_monad_control "1.0.1.0"
+#define MIN_VERSION_monad_control(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  0 || \
+  (major1) == 1 && (major2) == 0 && (minor) <= 1)
+
 /* package persistent-2.6 */
 #define VERSION_persistent "2.6"
 #define MIN_VERSION_persistent(major1,major2,minor) (\

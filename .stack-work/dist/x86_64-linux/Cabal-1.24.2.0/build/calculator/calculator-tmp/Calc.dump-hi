@@ -1,18 +1,18 @@
 
 ==================== FINAL INTERFACE ====================
-2017-05-02 20:53:44.389148 UTC
+2017-05-03 12:21:14.22111 UTC
 
 interface main@main:Calc [family instance module] 8002
-  interface hash: 1238cfefef7fab305e34dfdaf789d521
-  ABI hash: 2ec384677176af7518e0a4b6ae13bf71
-  export-list hash: 100d0a73c6c16e40617714fbb2e3262e
-  orphan hash: 07e9f9ae33077e1421af72b2d29f5e93
+  interface hash: 12dd9d385c639b1d9edc7eceb10ef341
+  ABI hash: 020c57e39616ee2ed84c03f08ea0715c
+  export-list hash: d1d8445dd627a377bbf26d95e5ffa9a0
+  orphan hash: 30c187925559f0f0efbaf4ec6d87e243
   flag hash: 63f5645a5e4b8d81a30b8163558f9afc
   sig of: Nothing
   used TH splices: False
   where
 exports:
-  Calc.Calculation{Calc.Calculation lOperand operator rOperand result}
+  Calc.Calc{Calc.Calc lOperand operator rOperand result}
   Calc.Op{Calc.Divide Calc.Minus Calc.Multiply Calc.Plus}
 module dependencies:
 package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
@@ -87,21 +87,19 @@ import  -/  aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU:Data.Aeson a76bef
 import  -/  aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU:Data.Aeson.Types.ToJSON e53f43051bb77ea718c22d27eb28abcb
 import  -/  base-4.9.1.0:GHC.Generics 1dbec2bc7dd1c5bd8c89ed857eaed19b
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
-5f35ba4e92a55449f60ca3f41f676f45
-  $fGenericCalculation :: GHC.Generics.Generic Calc.Calculation
+7002f08002408c5ece7b802982c3eeea
+  $fGenericCalc :: GHC.Generics.Generic Calc.Calc
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
-                  @ Calc.Calculation
-                  Calc.$fGenericCalculation_$cfrom
-                  Calc.$fGenericCalculation_$cto -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fGenericCalculation1 ::
-    Calc.Calculation
+                  @ Calc.Calc Calc.$fGenericCalc_$cfrom Calc.$fGenericCalc_$cto -}
+7002f08002408c5ece7b802982c3eeea
+  $fGenericCalc1 ::
+    Calc.Calc
     -> GHC.Generics.M1
          GHC.Generics.C
          ('GHC.Generics.MetaCons
-            "Calculation" 'GHC.Generics.PrefixI 'GHC.Types.True)
+            "Calc" 'GHC.Generics.PrefixI 'GHC.Types.True)
          ((GHC.Generics.M1
              GHC.Generics.S
              ('GHC.Generics.MetaSel
@@ -137,8 +135,8 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
          x
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ @ x (x1 :: Calc.Calculation) ->
-                 case x1 of wild { Calc.Calculation g1 g2 g3 g4 ->
+                (\ @ x (x1 :: Calc.Calc) ->
+                 case x1 of wild { Calc.Calc g1 g2 g3 g4 ->
                  (GHC.Generics.:*:
                     @ (GHC.Generics.M1
                          GHC.Generics.S
@@ -264,7 +262,7 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
                  (Sym (GHC.Generics.N:M1[0]
                            <GHC.Generics.C>_P
                            <'GHC.Generics.MetaCons
-                              "Calculation" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                              "Calc" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
                            <(GHC.Generics.M1
                                GHC.Generics.S
                                ('GHC.Generics.MetaSel
@@ -299,24 +297,22 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
                                                                  (GHC.Generics.K1
                                                                     GHC.Generics.R
                                                                     GHC.Types.Double))>_R) <x>_N) }) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fGenericCalculation_$cfrom ::
-    Calc.Calculation -> GHC.Generics.Rep Calc.Calculation x
+7002f08002408c5ece7b802982c3eeea
+  $fGenericCalc_$cfrom :: Calc.Calc -> GHC.Generics.Rep Calc.Calc x
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U)>m,
      Unfolding: InlineRule (0, True, True)
-                Calc.$fGenericCalculation1
+                Calc.$fGenericCalc1
                   `cast`
                 (forall (x :: <GHC.Types.*>_N).
-                 <Calc.Calculation>_R
+                 <Calc.Calc>_R
                  ->_R Trans
                           (Sym (GHC.Generics.N:M1[0]
                                     <GHC.Generics.D>_P
-                                    <'GHC.Generics.MetaData
-                                       "Calculation" "Calc" "main" 'GHC.Types.False>_P
+                                    <'GHC.Generics.MetaData "Calc" "Calc" "main" 'GHC.Types.False>_P
                                     <GHC.Generics.M1
                                        GHC.Generics.C
                                        ('GHC.Generics.MetaCons
-                                          "Calculation" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                          "Calc" 'GHC.Generics.PrefixI 'GHC.Types.True)
                                        ((GHC.Generics.M1
                                            GHC.Generics.S
                                            ('GHC.Generics.MetaSel
@@ -353,27 +349,26 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
                                                                              (GHC.Generics.K1
                                                                                 GHC.Generics.R
                                                                                 GHC.Types.Double)))>_R))
-                          (Sub (Sym (Calc.Rep_Calculation[0]))) <x>_N) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fGenericCalculation_$cto ::
-    GHC.Generics.Rep Calc.Calculation x -> Calc.Calculation
+                          (Sub (Sym (Calc.Rep_Calc[0]))) <x>_N) -}
+7002f08002408c5ece7b802982c3eeea
+  $fGenericCalc_$cto :: GHC.Generics.Rep Calc.Calc x -> Calc.Calc
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(SS),1*U(1*U(U,U),1*U(U,U))>m,
      Unfolding: InlineRule (1, True, False)
-                (\ @ x (ds :: GHC.Generics.Rep Calc.Calculation x) ->
+                (\ @ x (ds :: GHC.Generics.Rep Calc.Calc x) ->
                  case ds
                         `cast`
                       (Trans
-                           (Sub (Calc.Rep_Calculation[0]))
+                           (Sub (Calc.Rep_Calc[0]))
                            (Trans
                                 (GHC.Generics.N:M1[0]
                                      <GHC.Generics.D>_P
                                      <'GHC.Generics.MetaData
-                                        "Calculation" "Calc" "main" 'GHC.Types.False>_P
+                                        "Calc" "Calc" "main" 'GHC.Types.False>_P
                                      <GHC.Generics.M1
                                         GHC.Generics.C
                                         ('GHC.Generics.MetaCons
-                                           "Calculation" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                                           "Calc" 'GHC.Generics.PrefixI 'GHC.Types.True)
                                         ((GHC.Generics.M1
                                             GHC.Generics.S
                                             ('GHC.Generics.MetaSel
@@ -414,7 +409,7 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
                                 (GHC.Generics.N:M1[0]
                                      <GHC.Generics.C>_P
                                      <'GHC.Generics.MetaCons
-                                        "Calculation" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
+                                        "Calc" 'GHC.Generics.PrefixI 'GHC.Types.True>_P
                                      <(GHC.Generics.M1
                                          GHC.Generics.S
                                          ('GHC.Generics.MetaSel
@@ -453,7 +448,7 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
                                                                               GHC.Types.Double))>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
                  case ds1 of wild1 { GHC.Generics.:*: ds3 ds4 ->
                  case ds2 of wild2 { GHC.Generics.:*: ds5 ds6 ->
-                 Calc.Calculation
+                 Calc.Calc
                    ds3
                      `cast`
                    (Trans
@@ -503,26 +498,25 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
                              <GHC.Generics.K1 GHC.Generics.R GHC.Types.Double>_R <x>_N)
                         (GHC.Generics.N:K1[0]
                              <GHC.Generics.R>_P <GHC.Types.Double>_R <x>_P)) } } }) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fToJSONCalculation ::
-    Data.Aeson.Types.ToJSON.ToJSON Calc.Calculation
+7002f08002408c5ece7b802982c3eeea
+  $fToJSONCalc :: Data.Aeson.Types.ToJSON.ToJSON Calc.Calc
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
-                  @ Calc.Calculation
-                  Calc.$fToJSONCalculation_$ctoJSON
-                  Calc.$fToJSONCalculation_$ctoEncoding
-                  Calc.$fToJSONCalculation_$ctoJSONList
-                  Calc.$fToJSONCalculation_$ctoEncodingList -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fToJSONCalculation1 ::
-    Calc.Calculation
+                  @ Calc.Calc
+                  Calc.$fToJSONCalc_$ctoJSON
+                  Calc.$fToJSONCalc_$ctoEncoding
+                  Calc.$fToJSONCalc_$ctoJSONList
+                  Calc.$fToJSONCalc_$ctoEncodingList -}
+7002f08002408c5ece7b802982c3eeea
+  $fToJSONCalc1 ::
+    Calc.Calc
     -> Data.Tagged.Tagged
          Data.Aeson.Types.Generic.True Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U(U,U,U,U)>m1, Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
-                (\ (w :: Calc.Calculation) ->
-                 case w of ww { Calc.Calculation ww1 ww2 ww3 ww4 ->
+                (\ (w :: Calc.Calc) ->
+                 case w of ww { Calc.Calc ww1 ww2 ww3 ww4 ->
                  case Calc.$w$ctoJSON ww1 ww2 ww3 ww4 of ww5 { Unit# ww6 ->
                  (Data.Aeson.Types.Internal.Object ww6)
                    `cast`
@@ -530,29 +524,28 @@ import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
                            <*>_N
                            <Data.Aeson.Types.Generic.True>_P
                            <Data.Aeson.Types.Internal.Value>_R)) } }) -}
-93d42e0e0133f0858efc6c14dd79d4ca
-  $fToJSONCalculation10 :: Data.Aeson.Types.Internal.Value
+2a7d448d51695eedcd678aa12845b9a1
+  $fToJSONCalc10 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "-"# of dt1 { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt1 }) -}
-71928e8721738469e1339c02460d03cb
-  $fToJSONCalculation11 :: Data.Aeson.Types.Internal.Value
+9087e297139543b4a43281d2ceb1a867
+  $fToJSONCalc11 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "+"# of dt1 { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt1 }) -}
-d747f6ede7eb3bcfbd81d486c3a3843f
-  $fToJSONCalculation12 ::
-    GHC.Generics.SingI ('GHC.Base.Just "operator")
+07c049b6ff67295527e6c11f926d0880
+  $fToJSONCalc12 :: GHC.Generics.SingI ('GHC.Base.Just "operator")
   {- Unfolding: InlineRule (0, True, True)
-                Calc.$fToJSONCalculation13
+                Calc.$fToJSONCalc13
                   `cast`
                 (Trans
                      (Sym (GHC.Generics.D:R:SingMaybeb0[0] <GHC.Types.Symbol>_N))
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Base.Maybe
                                                        GHC.Types.Symbol>_N) <'GHC.Base.Just
                                                                                "operator">_N) -}
-318bfdd11b4471a9ee9dd9a3947c183b
-  $fToJSONCalculation13 ::
+12cbc6d24eb37c38359277076a42dfce
+  $fToJSONCalc13 ::
     GHC.Generics.R:SingMaybeb
       GHC.Types.Symbol ('GHC.Base.Just "operator")
   {- Unfolding: (GHC.Generics.SJust
@@ -560,35 +553,34 @@ d747f6ede7eb3bcfbd81d486c3a3843f
                    @ ('GHC.Base.Just "operator")
                    @ "operator"
                    @~ <'GHC.Base.Just "operator">_N
-                   Calc.$fToJSONCalculation14
+                   Calc.$fToJSONCalc14
                      `cast`
                    (Sym (GHC.Generics.D:R:SingSymbols0[0]) <"operator">_N)) -}
-870b83f38f6fd8f609847be61187f9d2
-  $fToJSONCalculation14 :: GHC.Generics.R:SingSymbols "operator"
+38e809a3293cbf049b64940197d9c5c0
+  $fToJSONCalc14 :: GHC.Generics.R:SingSymbols "operator"
   {- Strictness: m,
      Unfolding: (GHC.Generics.SSym
                    @ "operator"
-                   Calc.$fToJSONCalculation15
+                   Calc.$fToJSONCalc15
                      `cast`
                    (Trans
                         (Sym (GHC.TypeLits.N:SSymbol[0] <"operator">_P))
                         (Sym (GHC.TypeLits.N:KnownSymbol[0]) <"operator">_N))) -}
-78ed7dc435acfa4451e43ab5403b1b53
-  $fToJSONCalculation15 :: [GHC.Types.Char]
+dee9b868818ef0b9b0e285307e3394b7
+  $fToJSONCalc15 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "operator"#) -}
-c9483703f7c5c7e6f21c433ac28be8c5
-  $fToJSONCalculation16 ::
-    GHC.Generics.SingI ('GHC.Base.Just "rOperand")
+236e1c7e49f0b2b241e7bb5b10a5c56b
+  $fToJSONCalc16 :: GHC.Generics.SingI ('GHC.Base.Just "rOperand")
   {- Unfolding: InlineRule (0, True, True)
-                Calc.$fToJSONCalculation17
+                Calc.$fToJSONCalc17
                   `cast`
                 (Trans
                      (Sym (GHC.Generics.D:R:SingMaybeb0[0] <GHC.Types.Symbol>_N))
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Base.Maybe
                                                        GHC.Types.Symbol>_N) <'GHC.Base.Just
                                                                                "rOperand">_N) -}
-275980277d423564aac757dbc0a826bd
-  $fToJSONCalculation17 ::
+eacd939d97332b780c89d98cc1a9c452
+  $fToJSONCalc17 ::
     GHC.Generics.R:SingMaybeb
       GHC.Types.Symbol ('GHC.Base.Just "rOperand")
   {- Unfolding: (GHC.Generics.SJust
@@ -596,24 +588,24 @@ c9483703f7c5c7e6f21c433ac28be8c5
                    @ ('GHC.Base.Just "rOperand")
                    @ "rOperand"
                    @~ <'GHC.Base.Just "rOperand">_N
-                   Calc.$fToJSONCalculation18
+                   Calc.$fToJSONCalc18
                      `cast`
                    (Sym (GHC.Generics.D:R:SingSymbols0[0]) <"rOperand">_N)) -}
-44f3ab8308cb43b46ca3aabfab5288e3
-  $fToJSONCalculation18 :: GHC.Generics.R:SingSymbols "rOperand"
+591de72a427bfc5fb52a30abf9a5f6f8
+  $fToJSONCalc18 :: GHC.Generics.R:SingSymbols "rOperand"
   {- Strictness: m,
      Unfolding: (GHC.Generics.SSym
                    @ "rOperand"
-                   Calc.$fToJSONCalculation19
+                   Calc.$fToJSONCalc19
                      `cast`
                    (Trans
                         (Sym (GHC.TypeLits.N:SSymbol[0] <"rOperand">_P))
                         (Sym (GHC.TypeLits.N:KnownSymbol[0]) <"rOperand">_N))) -}
-48aee3c401e6115aaa3c28043951cc3b
-  $fToJSONCalculation19 :: [GHC.Types.Char]
+7b4ad077ff0dc716e4a1c4ee12216269
+  $fToJSONCalc19 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "rOperand"#) -}
-c548bf49fe0b863d6fbc413926c013f3
-  $fToJSONCalculation2 ::
+b1301dc759cb91f5417ad730bc1da7a0
+  $fToJSONCalc2 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.ToJSON.ToArgs
          Data.Aeson.Types.Internal.Value Data.Aeson.Types.Generic.Zero a1
@@ -631,8 +623,8 @@ c548bf49fe0b863d6fbc413926c013f3
                      `cast`
                    (GHC.Generics.N:K1[0]
                         <GHC.Generics.R>_P <GHC.Types.Double>_R <a1>_P)) -}
-a3d4603cb8bc3d69160d8d1a1092c7ca
-  $fToJSONCalculation20 ::
+616589b04e68a94e06cb15544ae12f7f
+  $fToJSONCalc20 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.ToJSON.ToArgs
          Data.Aeson.Types.Internal.Value Data.Aeson.Types.Generic.Zero a1
@@ -654,19 +646,18 @@ a3d4603cb8bc3d69160d8d1a1092c7ca
                  case GHC.Integer.Type.smallInteger i of dt { DEFAULT ->
                  Data.Aeson.Types.Internal.Number
                    (Data.Scientific.Scientific dt 0#) } }) -}
-71b296a6ea0df3f57d32c7fabc65d164
-  $fToJSONCalculation21 ::
-    GHC.Generics.SingI ('GHC.Base.Just "lOperand")
+707774c2130826ea4190fd6fd6b14fc1
+  $fToJSONCalc21 :: GHC.Generics.SingI ('GHC.Base.Just "lOperand")
   {- Unfolding: InlineRule (0, True, True)
-                Calc.$fToJSONCalculation22
+                Calc.$fToJSONCalc22
                   `cast`
                 (Trans
                      (Sym (GHC.Generics.D:R:SingMaybeb0[0] <GHC.Types.Symbol>_N))
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Base.Maybe
                                                        GHC.Types.Symbol>_N) <'GHC.Base.Just
                                                                                "lOperand">_N) -}
-819b41ff004d2c101a5cc3c6bbb47fc3
-  $fToJSONCalculation22 ::
+6c381915ba4c75e746fa7f6feb817d80
+  $fToJSONCalc22 ::
     GHC.Generics.R:SingMaybeb
       GHC.Types.Symbol ('GHC.Base.Just "lOperand")
   {- Unfolding: (GHC.Generics.SJust
@@ -674,35 +665,34 @@ a3d4603cb8bc3d69160d8d1a1092c7ca
                    @ ('GHC.Base.Just "lOperand")
                    @ "lOperand"
                    @~ <'GHC.Base.Just "lOperand">_N
-                   Calc.$fToJSONCalculation23
+                   Calc.$fToJSONCalc23
                      `cast`
                    (Sym (GHC.Generics.D:R:SingSymbols0[0]) <"lOperand">_N)) -}
-45bb3529c9c820f4d29657ee5f67a38f
-  $fToJSONCalculation23 :: GHC.Generics.R:SingSymbols "lOperand"
+711cc19966330c3b96240a13e19891db
+  $fToJSONCalc23 :: GHC.Generics.R:SingSymbols "lOperand"
   {- Strictness: m,
      Unfolding: (GHC.Generics.SSym
                    @ "lOperand"
-                   Calc.$fToJSONCalculation24
+                   Calc.$fToJSONCalc24
                      `cast`
                    (Trans
                         (Sym (GHC.TypeLits.N:SSymbol[0] <"lOperand">_P))
                         (Sym (GHC.TypeLits.N:KnownSymbol[0]) <"lOperand">_N))) -}
-02251dae345206bd73e308eb7bee71dd
-  $fToJSONCalculation24 :: [GHC.Types.Char]
+26ef53798c1fc31a62d6d9c8b24583cc
+  $fToJSONCalc24 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "lOperand"#) -}
-aeaab0e4bc1fec42bfaeb9ac4fcac800
-  $fToJSONCalculation3 ::
-    GHC.Generics.SingI ('GHC.Base.Just "result")
+3aee59d157c2e24fcfdc8a9864554edf
+  $fToJSONCalc3 :: GHC.Generics.SingI ('GHC.Base.Just "result")
   {- Unfolding: InlineRule (0, True, True)
-                Calc.$fToJSONCalculation4
+                Calc.$fToJSONCalc4
                   `cast`
                 (Trans
                      (Sym (GHC.Generics.D:R:SingMaybeb0[0] <GHC.Types.Symbol>_N))
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Base.Maybe
                                                        GHC.Types.Symbol>_N) <'GHC.Base.Just
                                                                                "result">_N) -}
-3630628f8dec5e001794b33e995ffca4
-  $fToJSONCalculation4 ::
+4b78cd932cfcf7bd00df18031f09614e
+  $fToJSONCalc4 ::
     GHC.Generics.R:SingMaybeb
       GHC.Types.Symbol ('GHC.Base.Just "result")
   {- Unfolding: (GHC.Generics.SJust
@@ -710,24 +700,24 @@ aeaab0e4bc1fec42bfaeb9ac4fcac800
                    @ ('GHC.Base.Just "result")
                    @ "result"
                    @~ <'GHC.Base.Just "result">_N
-                   Calc.$fToJSONCalculation5
+                   Calc.$fToJSONCalc5
                      `cast`
                    (Sym (GHC.Generics.D:R:SingSymbols0[0]) <"result">_N)) -}
-7e125a4e3241da54da81fabdcec10519
-  $fToJSONCalculation5 :: GHC.Generics.R:SingSymbols "result"
+2a4d14abcb99cd0ff162c81f55a1d72b
+  $fToJSONCalc5 :: GHC.Generics.R:SingSymbols "result"
   {- Strictness: m,
      Unfolding: (GHC.Generics.SSym
                    @ "result"
-                   Calc.$fToJSONCalculation6
+                   Calc.$fToJSONCalc6
                      `cast`
                    (Trans
                         (Sym (GHC.TypeLits.N:SSymbol[0] <"result">_P))
                         (Sym (GHC.TypeLits.N:KnownSymbol[0]) <"result">_N))) -}
-1ed3e5e1c730e8d6ac06aee971977821
-  $fToJSONCalculation6 :: [GHC.Types.Char]
+75e5569f03f2e9869641f186a7b605c5
+  $fToJSONCalc6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "result"#) -}
-c1314b3d81ccd0915fbf3570bee7785c
-  $fToJSONCalculation7 ::
+d3907e16f0dd9ba2bb3ffebe34c75173
+  $fToJSONCalc7 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.ToJSON.ToArgs
          Data.Aeson.Types.Internal.Value Data.Aeson.Types.Generic.Zero a1
@@ -740,35 +730,35 @@ c1314b3d81ccd0915fbf3570bee7785c
                    (ds :: Data.Aeson.Types.ToJSON.ToArgs
                             Data.Aeson.Types.Internal.Value Data.Aeson.Types.Generic.Zero a1)
                    (eta :: GHC.Generics.K1 GHC.Generics.R Calc.Op a1) ->
-                 Calc.$fToJSONCalculation_$ctoJSON1
+                 Calc.$fToJSONCalc_$ctoJSON1
                    eta
                      `cast`
                    (GHC.Generics.N:K1[0] <GHC.Generics.R>_P <Calc.Op>_R <a1>_P)) -}
-be1da3fda4253dc221b53f4f90b494e9
-  $fToJSONCalculation8 :: Data.Aeson.Types.Internal.Value
+86820688cc4aecc85102c5be4a45d468
+  $fToJSONCalc8 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "/"# of dt1 { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt1 }) -}
-125aadb0480b8a77685975e2c1d71106
-  $fToJSONCalculation9 :: Data.Aeson.Types.Internal.Value
+94195a4d1ce53048390573bcb9635279
+  $fToJSONCalc9 :: Data.Aeson.Types.Internal.Value
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "*"# of dt1 { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt1 }) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fToJSONCalculation_$ctoEncoding ::
-    Calc.Calculation -> Data.Aeson.Encoding.Internal.Encoding
+7002f08002408c5ece7b802982c3eeea
+  $fToJSONCalc_$ctoEncoding ::
+    Calc.Calc -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U(U,U,U,U)>,
      Inline: INLINE (sat-args=0),
      Unfolding: InlineRule (0, False, False)
-                (\ (eta :: Calc.Calculation) ->
+                (\ (eta :: Calc.Calc) ->
                  Data.Aeson.Encoding.Internal.value
-                   (Calc.$fToJSONCalculation_$ctoJSON eta)) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fToJSONCalculation_$ctoEncodingList ::
-    [Calc.Calculation] -> Data.Aeson.Encoding.Internal.Encoding
+                   (Calc.$fToJSONCalc_$ctoJSON eta)) -}
+7002f08002408c5ece7b802982c3eeea
+  $fToJSONCalc_$ctoEncodingList ::
+    [Calc.Calc] -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
      Unfolding: InlineRule (0, False, False)
-                (\ (eta :: [Calc.Calculation]) ->
+                (\ (eta :: [Calc.Calc]) ->
                  case eta of wild {
                    [] -> Data.Aeson.Encoding.Internal.emptyArray_
                    : x xs
@@ -779,17 +769,16 @@ be1da3fda4253dc221b53f4f90b494e9
                          (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                               <Data.Aeson.Types.Internal.Value>_P)
                          (Data.ByteString.Builder.Internal.append
-                            (Data.Aeson.Encoding.Internal.value
-                               (Calc.$fToJSONCalculation_$ctoJSON x))
+                            (Data.Aeson.Encoding.Internal.value (Calc.$fToJSONCalc_$ctoJSON x))
                               `cast`
                             (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                  <Data.Aeson.Types.Internal.Value>_P)
                             (Data.ByteString.Builder.Internal.append
                                (GHC.Base.foldr
-                                  @ Calc.Calculation
+                                  @ Calc.Calc
                                   @ (Data.Aeson.Encoding.Internal.Encoding'
                                        Data.Aeson.Types.Internal.Value)
-                                  (\ (v :: Calc.Calculation)
+                                  (\ (v :: Calc.Calc)
                                      (vs :: Data.Aeson.Encoding.Internal.Encoding'
                                               Data.Aeson.Types.Internal.Value)[OneShot] ->
                                    Data.ByteString.Builder.Internal.append
@@ -800,7 +789,7 @@ be1da3fda4253dc221b53f4f90b494e9
                                           <Data.Aeson.Types.Internal.Value>_P)
                                      (Data.ByteString.Builder.Internal.append
                                         (Data.Aeson.Encoding.Internal.value
-                                           (Calc.$fToJSONCalculation_$ctoJSON v))
+                                           (Calc.$fToJSONCalc_$ctoJSON v))
                                           `cast`
                                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                              <Data.Aeson.Types.Internal.Value>_P)
@@ -809,7 +798,7 @@ be1da3fda4253dc221b53f4f90b494e9
                                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                              <Data.Aeson.Types.Internal.Value>_P)))
                                     `cast`
-                                  (<Calc.Calculation>_R
+                                  (<Calc.Calc>_R
                                    ->_R <Data.Aeson.Encoding.Internal.Encoding'
                                            Data.Aeson.Types.Internal.Value>_R
                                    ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
@@ -828,35 +817,35 @@ be1da3fda4253dc221b53f4f90b494e9
                         `cast`
                       (Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                 <Data.Aeson.Types.Internal.Value>_P)) }) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fToJSONCalculation_$ctoJSON ::
-    Calc.Calculation -> Data.Aeson.Types.Internal.Value
+7002f08002408c5ece7b802982c3eeea
+  $fToJSONCalc_$ctoJSON ::
+    Calc.Calc -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U(U,U,U,U)>m1,
      Unfolding: InlineRule (0, True, True)
-                Calc.$fToJSONCalculation1
+                Calc.$fToJSONCalc1
                   `cast`
-                (<Calc.Calculation>_R
+                (<Calc.Calc>_R
                  ->_R Data.Tagged.N:Tagged[0]
                           <*>_N
                           <Data.Aeson.Types.Generic.True>_P
                           <Data.Aeson.Types.Internal.Value>_R) -}
-597d3e1391c768309ad3b80a6ccc4a28
-  $fToJSONCalculation_$ctoJSON1 ::
+aa96a53298345af8a284cb39df5b48c3
+  $fToJSONCalc_$ctoJSON1 ::
     Calc.Op -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Calc.Op) ->
                  case ds of wild {
-                   Calc.Plus -> Calc.$fToJSONCalculation11
-                   Calc.Minus -> Calc.$fToJSONCalculation10
-                   Calc.Multiply -> Calc.$fToJSONCalculation9
-                   Calc.Divide -> Calc.$fToJSONCalculation8 }) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  $fToJSONCalculation_$ctoJSONList ::
-    [Calc.Calculation] -> Data.Aeson.Types.Internal.Value
+                   Calc.Plus -> Calc.$fToJSONCalc11
+                   Calc.Minus -> Calc.$fToJSONCalc10
+                   Calc.Multiply -> Calc.$fToJSONCalc9
+                   Calc.Divide -> Calc.$fToJSONCalc8 }) -}
+7002f08002408c5ece7b802982c3eeea
+  $fToJSONCalc_$ctoJSONList ::
+    [Calc.Calc] -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE (sat-args=0),
      Unfolding: InlineRule (0, False, False)
-                (\ (eta :: [Calc.Calculation]) ->
+                (\ (eta :: [Calc.Calc]) ->
                  case Data.Vector.Generic.new
                         @ Data.Vector.Vector
                         @ Data.Aeson.Types.Internal.Value
@@ -877,19 +866,19 @@ be1da3fda4253dc221b53f4f90b494e9
                                     (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
                                     (n :: b1)[OneShot] ->
                                   GHC.Base.foldr
-                                    @ Calc.Calculation
+                                    @ Calc.Calc
                                     @ b1
                                     (GHC.Base.mapFB
                                        @ Data.Aeson.Types.Internal.Value
                                        @ b1
-                                       @ Calc.Calculation
+                                       @ Calc.Calc
                                        c
-                                       Calc.$fToJSONCalculation_$ctoJSON)
+                                       Calc.$fToJSONCalc_$ctoJSON)
                                     n
                                     eta)))) of dt1 { Data.Vector.Vector ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.Array dt1 }) -}
-1e354eef4fa1485bb3ddadfb1b4c628e
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel ::
+cc0b8293764a537e480444f1969ff8ec
+  $fToJSONCalc_$s$fSelectorMetaMetaSel ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
          ('GHC.Base.Just "result")
@@ -904,13 +893,13 @@ be1da3fda4253dc221b53f4f90b494e9
                        'GHC.Generics.NoSourceUnpackedness
                        'GHC.Generics.NoSourceStrictness
                        'GHC.Generics.DecidedLazy)
-                  Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName
+                  Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName
                   (GHC.Generics.$fSelectorMetaMetaSel_$cselSourceUnpackedness
                      @ ('GHC.Base.Just "result")
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation3
+                     Calc.$fToJSONCalc3
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -925,7 +914,7 @@ be1da3fda4253dc221b53f4f90b494e9
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation3
+                     Calc.$fToJSONCalc3
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -940,7 +929,7 @@ be1da3fda4253dc221b53f4f90b494e9
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation3
+                     Calc.$fToJSONCalc3
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -950,8 +939,8 @@ be1da3fda4253dc221b53f4f90b494e9
                      GHC.Generics.$WSDecidedLazy
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.DecidedStrictness>_N <'GHC.Generics.DecidedLazy>_N)) -}
-36453f1607708fa38b4c684e083b15fe
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel1 ::
+06f0bfbf019ee9daf1903ce981cd2472
+  $fToJSONCalc_$s$fSelectorMetaMetaSel1 ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
          ('GHC.Base.Just "operator")
@@ -966,13 +955,13 @@ be1da3fda4253dc221b53f4f90b494e9
                        'GHC.Generics.NoSourceUnpackedness
                        'GHC.Generics.NoSourceStrictness
                        'GHC.Generics.DecidedLazy)
-                  Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName1
+                  Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName1
                   (GHC.Generics.$fSelectorMetaMetaSel_$cselSourceUnpackedness
                      @ ('GHC.Base.Just "operator")
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation12
+                     Calc.$fToJSONCalc12
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -987,7 +976,7 @@ be1da3fda4253dc221b53f4f90b494e9
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation12
+                     Calc.$fToJSONCalc12
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1002,7 +991,7 @@ be1da3fda4253dc221b53f4f90b494e9
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation12
+                     Calc.$fToJSONCalc12
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1012,8 +1001,8 @@ be1da3fda4253dc221b53f4f90b494e9
                      GHC.Generics.$WSDecidedLazy
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.DecidedStrictness>_N <'GHC.Generics.DecidedLazy>_N)) -}
-e1a4c2fed1280612fd8198c4e2fa9d19
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel2 ::
+732dfa26cebc62360605810bcf3c0c21
+  $fToJSONCalc_$s$fSelectorMetaMetaSel2 ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
          ('GHC.Base.Just "rOperand")
@@ -1028,13 +1017,13 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                        'GHC.Generics.NoSourceUnpackedness
                        'GHC.Generics.NoSourceStrictness
                        'GHC.Generics.DecidedLazy)
-                  Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName2
+                  Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName2
                   (GHC.Generics.$fSelectorMetaMetaSel_$cselSourceUnpackedness
                      @ ('GHC.Base.Just "rOperand")
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation16
+                     Calc.$fToJSONCalc16
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1049,7 +1038,7 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation16
+                     Calc.$fToJSONCalc16
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1064,7 +1053,7 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation16
+                     Calc.$fToJSONCalc16
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1074,8 +1063,8 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                      GHC.Generics.$WSDecidedLazy
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.DecidedStrictness>_N <'GHC.Generics.DecidedLazy>_N)) -}
-4ee5222327501823dfd4a6432ecf9b52
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel3 ::
+44cf864261fcbe6f09186ff02e028d3f
+  $fToJSONCalc_$s$fSelectorMetaMetaSel3 ::
     GHC.Generics.Selector
       ('GHC.Generics.MetaSel
          ('GHC.Base.Just "lOperand")
@@ -1090,13 +1079,13 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                        'GHC.Generics.NoSourceUnpackedness
                        'GHC.Generics.NoSourceStrictness
                        'GHC.Generics.DecidedLazy)
-                  Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName3
+                  Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName3
                   (GHC.Generics.$fSelectorMetaMetaSel_$cselSourceUnpackedness
                      @ ('GHC.Base.Just "lOperand")
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation21
+                     Calc.$fToJSONCalc21
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1111,7 +1100,7 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation21
+                     Calc.$fToJSONCalc21
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1126,7 +1115,7 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                      @ 'GHC.Generics.NoSourceUnpackedness
                      @ 'GHC.Generics.NoSourceStrictness
                      @ 'GHC.Generics.DecidedLazy
-                     Calc.$fToJSONCalculation21
+                     Calc.$fToJSONCalc21
                      GHC.Generics.$WSNoSourceUnpackedness
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.SourceUnpackedness>_N <'GHC.Generics.NoSourceUnpackedness>_N)
@@ -1136,8 +1125,8 @@ e1a4c2fed1280612fd8198c4e2fa9d19
                      GHC.Generics.$WSDecidedLazy
                        `cast`
                      (Sym (GHC.Generics.N:SingI[0]) <GHC.Generics.DecidedStrictness>_N <'GHC.Generics.DecidedLazy>_N)) -}
-bb7dc081bbb9e4286feff790d0919c20
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName ::
+2751df546ead54c8d933a72cf7554520
+  $fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName ::
     forall k (t :: GHC.Generics.Meta
                    -> (GHC.Types.* -> GHC.Types.*) -> k -> *) (f :: GHC.Types.*
                                                                     -> GHC.Types.*) (a :: k).
@@ -1159,9 +1148,9 @@ bb7dc081bbb9e4286feff790d0919c20
                                 'GHC.Generics.NoSourceUnpackedness
                                 'GHC.Generics.NoSourceStrictness
                                 'GHC.Generics.DecidedLazy) f a) ->
-                 Calc.$fToJSONCalculation6) -}
-bcfd613a9cac4c1c7da9a9ce8d0a4568
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName1 ::
+                 Calc.$fToJSONCalc6) -}
+54b393e72d059fd07fedc18ce0cc203d
+  $fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName1 ::
     forall k (t :: GHC.Generics.Meta
                    -> (GHC.Types.* -> GHC.Types.*) -> k -> *) (f :: GHC.Types.*
                                                                     -> GHC.Types.*) (a :: k).
@@ -1183,9 +1172,9 @@ bcfd613a9cac4c1c7da9a9ce8d0a4568
                                 'GHC.Generics.NoSourceUnpackedness
                                 'GHC.Generics.NoSourceStrictness
                                 'GHC.Generics.DecidedLazy) f a) ->
-                 Calc.$fToJSONCalculation15) -}
-c6e8acbd552497cd8da07bd808f44398
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName2 ::
+                 Calc.$fToJSONCalc15) -}
+b24c56ea431cd3e58589c174e7105c87
+  $fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName2 ::
     forall k (t :: GHC.Generics.Meta
                    -> (GHC.Types.* -> GHC.Types.*) -> k -> *) (f :: GHC.Types.*
                                                                     -> GHC.Types.*) (a :: k).
@@ -1207,9 +1196,9 @@ c6e8acbd552497cd8da07bd808f44398
                                 'GHC.Generics.NoSourceUnpackedness
                                 'GHC.Generics.NoSourceStrictness
                                 'GHC.Generics.DecidedLazy) f a) ->
-                 Calc.$fToJSONCalculation19) -}
-6c42a99ff104e10f7c0440fd9e019963
-  $fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName3 ::
+                 Calc.$fToJSONCalc19) -}
+188972264d62d410a1c4a0641fea1e63
+  $fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName3 ::
     forall k (t :: GHC.Generics.Meta
                    -> (GHC.Types.* -> GHC.Types.*) -> k -> *) (f :: GHC.Types.*
                                                                     -> GHC.Types.*) (a :: k).
@@ -1231,9 +1220,9 @@ c6e8acbd552497cd8da07bd808f44398
                                 'GHC.Generics.NoSourceUnpackedness
                                 'GHC.Generics.NoSourceStrictness
                                 'GHC.Generics.DecidedLazy) f a) ->
-                 Calc.$fToJSONCalculation24) -}
-7d20c62475335243290a4c47888f9708
-  $fToJSONCalculation_w2 :: Data.Aeson.Types.Internal.Options
+                 Calc.$fToJSONCalc24) -}
+19e11f54e8557a77770eb592019438cb
+  $fToJSONCalc_w2 :: Data.Aeson.Types.Internal.Options
   {- Strictness: m,
      Unfolding: (Data.Aeson.Types.Internal.Options
                    (GHC.Base.id @ GHC.Base.String)
@@ -1242,25 +1231,25 @@ c6e8acbd552497cd8da07bd808f44398
                    GHC.Types.False
                    Data.Aeson.Types.Internal.defaultTaggedObject
                    GHC.Types.False) -}
-597d3e1391c768309ad3b80a6ccc4a28
+aa96a53298345af8a284cb39df5b48c3
   $fToJSONOp :: Data.Aeson.Types.ToJSON.ToJSON Calc.Op
   DFunId
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
      Unfolding: DFun:.
                   @ Calc.Op
-                  Calc.$fToJSONCalculation_$ctoJSON1
+                  Calc.$fToJSONCalc_$ctoJSON1
                   Calc.$fToJSONOp_$ctoEncoding
                   Calc.$fToJSONOp_$ctoJSONList
                   Calc.$fToJSONOp_$ctoEncodingList -}
-597d3e1391c768309ad3b80a6ccc4a28
+aa96a53298345af8a284cb39df5b48c3
   $fToJSONOp_$ctoEncoding ::
     Calc.Op -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
      Unfolding: InlineRule (0, False, False)
                 (\ (eta :: Calc.Op) ->
                  Data.Aeson.Encoding.Internal.value
-                   (Calc.$fToJSONCalculation_$ctoJSON1 eta)) -}
-597d3e1391c768309ad3b80a6ccc4a28
+                   (Calc.$fToJSONCalc_$ctoJSON1 eta)) -}
+aa96a53298345af8a284cb39df5b48c3
   $fToJSONOp_$ctoEncodingList ::
     [Calc.Op] -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
@@ -1277,7 +1266,7 @@ c6e8acbd552497cd8da07bd808f44398
                               <Data.Aeson.Types.Internal.Value>_P)
                          (Data.ByteString.Builder.Internal.append
                             (Data.Aeson.Encoding.Internal.value
-                               (Calc.$fToJSONCalculation_$ctoJSON1 x))
+                               (Calc.$fToJSONCalc_$ctoJSON1 x))
                               `cast`
                             (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                  <Data.Aeson.Types.Internal.Value>_P)
@@ -1297,7 +1286,7 @@ c6e8acbd552497cd8da07bd808f44398
                                           <Data.Aeson.Types.Internal.Value>_P)
                                      (Data.ByteString.Builder.Internal.append
                                         (Data.Aeson.Encoding.Internal.value
-                                           (Calc.$fToJSONCalculation_$ctoJSON1 v))
+                                           (Calc.$fToJSONCalc_$ctoJSON1 v))
                                           `cast`
                                         (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                              <Data.Aeson.Types.Internal.Value>_P)
@@ -1325,7 +1314,7 @@ c6e8acbd552497cd8da07bd808f44398
                         `cast`
                       (Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                 <Data.Aeson.Types.Internal.Value>_P)) }) -}
-597d3e1391c768309ad3b80a6ccc4a28
+aa96a53298345af8a284cb39df5b48c3
   $fToJSONOp_$ctoJSONList ::
     [Calc.Op] -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE (sat-args=0),
@@ -1358,22 +1347,22 @@ c6e8acbd552497cd8da07bd808f44398
                                        @ b1
                                        @ Calc.Op
                                        c
-                                       Calc.$fToJSONCalculation_$ctoJSON1)
+                                       Calc.$fToJSONCalc_$ctoJSON1)
                                     n
                                     eta)))) of dt1 { Data.Vector.Vector ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.Array dt1 }) -}
-4f5534adbe957dfb25400a222809f65c
-  $tc'Calculation :: GHC.Types.TyCon
+1eab2a8788ea92d2e315894a6271a26c
+  $tc'Calc :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   11829241339497755239##
-                   17557328835605412002##
+                   8327779958346129825##
+                   12043790310404546954##
                    Calc.$trModule
-                   Calc.$tc'Calculation1) -}
-092bb07c8eecadf9eba4908f5f7ac9d6
-  $tc'Calculation1 :: GHC.Types.TrName
+                   Calc.$tc'Calc1) -}
+033f0905177d05c5af5b4ea00e3f2e06
+  $tc'Calc1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS "'Calculation"#) -}
+     Unfolding: (GHC.Types.TrNameS "'Calc"#) -}
 948c4f9e941197e78e80dff898511e44
   $tc'Divide :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -1422,18 +1411,14 @@ c44e9439f82421476019a7657735ef0e
   $tc'Plus1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "'Plus"#) -}
-4a8170d9971c8646b47bfd014d3d0cdc
-  $tcCalculation :: GHC.Types.TyCon
+d7c6e7ad3c9a011653a094107aba311f
+  $tcCalc :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
-                   10914141802210917486##
-                   16765413633425280901##
+                   16356988974487165182##
+                   14045545656848668917##
                    Calc.$trModule
-                   Calc.$tcCalculation1) -}
-9ac931603dbf9cd7fe99a5ffea5ae032
-  $tcCalculation1 :: GHC.Types.TrName
-  {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS "Calculation"#) -}
+                   Calc.$trModule1) -}
 93a6a1bcfa7fe07d998223a7a4ffa659
   $tcOp :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -1458,7 +1443,7 @@ f7b0d70fde9ebece51b83b0ee684a2c8
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-27d9c49810af5f5a315d63df4aa88de0
+72e2991d74e860469893e7d9fad5dedd
   $w$ctoJSON ::
     GHC.Types.Int
     -> GHC.Types.Int
@@ -1480,14 +1465,14 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                 'GHC.Generics.DecidedLazy)
                            @ Data.Aeson.Types.Generic.Zero
                            @ (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
-                           Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel3
-                           Calc.$fToJSONCalculation20
+                           Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel3
+                           Calc.$fToJSONCalc20
                              `cast`
                            (Sym (Data.Aeson.Types.ToJSON.N:GToJSON[0]
                                      <Data.Aeson.Types.Generic.Zero>_N
                                      <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_N))
                            @ GHC.Prim.Any
-                           Calc.$fToJSONCalculation_w2
+                           Calc.$fToJSONCalc_w2
                            (Data.Aeson.Types.ToJSON.$WNoToArgs
                               @ Data.Aeson.Types.Internal.Value
                               @ GHC.Prim.Any)
@@ -1513,14 +1498,14 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                    'GHC.Generics.DecidedLazy)
                               @ Data.Aeson.Types.Generic.Zero
                               @ (GHC.Generics.K1 GHC.Generics.R GHC.Types.Int)
-                              Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel2
-                              Calc.$fToJSONCalculation20
+                              Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel2
+                              Calc.$fToJSONCalc20
                                 `cast`
                               (Sym (Data.Aeson.Types.ToJSON.N:GToJSON[0]
                                         <Data.Aeson.Types.Generic.Zero>_N
                                         <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_N))
                               @ GHC.Prim.Any
-                              Calc.$fToJSONCalculation_w2
+                              Calc.$fToJSONCalc_w2
                               (Data.Aeson.Types.ToJSON.$WNoToArgs
                                  @ Data.Aeson.Types.Internal.Value
                                  @ GHC.Prim.Any)
@@ -1546,14 +1531,14 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                       'GHC.Generics.DecidedLazy)
                                  @ Data.Aeson.Types.Generic.Zero
                                  @ (GHC.Generics.K1 GHC.Generics.R Calc.Op)
-                                 Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel1
-                                 Calc.$fToJSONCalculation7
+                                 Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel1
+                                 Calc.$fToJSONCalc7
                                    `cast`
                                  (Sym (Data.Aeson.Types.ToJSON.N:GToJSON[0]
                                            <Data.Aeson.Types.Generic.Zero>_N
                                            <GHC.Generics.K1 GHC.Generics.R Calc.Op>_N))
                                  @ GHC.Prim.Any
-                                 Calc.$fToJSONCalculation_w2
+                                 Calc.$fToJSONCalc_w2
                                  (Data.Aeson.Types.ToJSON.$WNoToArgs
                                     @ Data.Aeson.Types.Internal.Value
                                     @ GHC.Prim.Any)
@@ -1579,14 +1564,14 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                          'GHC.Generics.DecidedLazy)
                                     @ Data.Aeson.Types.Generic.Zero
                                     @ (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double)
-                                    Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel
-                                    Calc.$fToJSONCalculation2
+                                    Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel
+                                    Calc.$fToJSONCalc2
                                       `cast`
                                     (Sym (Data.Aeson.Types.ToJSON.N:GToJSON[0]
                                               <Data.Aeson.Types.Generic.Zero>_N
                                               <GHC.Generics.K1 GHC.Generics.R GHC.Types.Double>_N))
                                     @ GHC.Prim.Any
-                                    Calc.$fToJSONCalculation_w2
+                                    Calc.$fToJSONCalc_w2
                                     (Data.Aeson.Types.ToJSON.$WNoToArgs
                                        @ Data.Aeson.Types.Internal.Value
                                        @ GHC.Prim.Any)
@@ -1612,23 +1597,22 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                            @ Data.Text.Internal.Text
                            @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
                  (# dt1 #) }) -}
-5f35ba4e92a55449f60ca3f41f676f45
-  data Calculation
-    = Calculation {lOperand :: GHC.Types.Int,
-                   rOperand :: GHC.Types.Int,
-                   operator :: Calc.Op,
-                   result :: GHC.Types.Double}
-597d3e1391c768309ad3b80a6ccc4a28
+7002f08002408c5ece7b802982c3eeea
+  data Calc
+    = Calc {lOperand :: GHC.Types.Int,
+            rOperand :: GHC.Types.Int,
+            operator :: Calc.Op,
+            result :: GHC.Types.Double}
+aa96a53298345af8a284cb39df5b48c3
   data Op = Plus | Minus | Multiply | Divide
-5f35ba4e92a55449f60ca3f41f676f45
-  axiom Rep_Calculation::
-      GHC.Generics.Rep Calc.Calculation
+7002f08002408c5ece7b802982c3eeea
+  axiom Rep_Calc::
+      GHC.Generics.Rep Calc.Calc
         = GHC.Generics.D1
-            ('GHC.Generics.MetaData
-               "Calculation" "Calc" "main" 'GHC.Types.False)
+            ('GHC.Generics.MetaData "Calc" "Calc" "main" 'GHC.Types.False)
             (GHC.Generics.C1
                ('GHC.Generics.MetaCons
-                  "Calculation" 'GHC.Generics.PrefixI 'GHC.Types.True)
+                  "Calc" 'GHC.Generics.PrefixI 'GHC.Types.True)
                ((GHC.Generics.S1
                    ('GHC.Generics.MetaSel
                       ('GHC.Base.Just "lOperand")
@@ -1657,44 +1641,42 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                                         'GHC.Generics.NoSourceStrictness
                                                         'GHC.Generics.DecidedLazy)
                                                      (GHC.Generics.Rec0 GHC.Types.Double))))
-79cf243e0b6bc076f7ca141a40438471
-  lOperand :: Calc.Calculation -> GHC.Types.Int
-  RecSel Left Calc.Calculation
+0aee5fb3d78f17cd771ad1f1d06c7b5c
+  lOperand :: Calc.Calc -> GHC.Types.Int
+  RecSel Left Calc.Calc
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(SLLL),1*U(1*U(U),A,A,A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Calc.Calculation) ->
-                 case ds of wild { Calc.Calculation ds1 ds2 ds3 ds4 -> ds1 }) -}
-1429cc755c8bb224fbbd8fbe6652332f
-  operator :: Calc.Calculation -> Calc.Op
-  RecSel Left Calc.Calculation
+                (\ (ds :: Calc.Calc) ->
+                 case ds of wild { Calc.Calc ds1 ds2 ds3 ds4 -> ds1 }) -}
+c5b3be22142875a9aaf9527a7c87710d
+  operator :: Calc.Calc -> Calc.Op
+  RecSel Left Calc.Calc
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
      Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Calc.Calculation) ->
-                 case ds of wild { Calc.Calculation ds1 ds2 ds3 ds4 -> ds3 }) -}
-7385e097b6204d52ce78f263136b6f4e
-  rOperand :: Calc.Calculation -> GHC.Types.Int
-  RecSel Left Calc.Calculation
+                (\ (ds :: Calc.Calc) ->
+                 case ds of wild { Calc.Calc ds1 ds2 ds3 ds4 -> ds3 }) -}
+9755551c0d5836580f2d82d7992113fc
+  rOperand :: Calc.Calc -> GHC.Types.Int
+  RecSel Left Calc.Calc
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(LSLL),1*U(A,1*U(U),A,A)>m,
      Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Calc.Calculation) ->
-                 case ds of wild { Calc.Calculation ds1 ds2 ds3 ds4 -> ds2 }) -}
-16d58df2947d07ae18a8df1e6142e7aa
-  result :: Calc.Calculation -> GHC.Types.Double
-  RecSel Left Calc.Calculation
+                (\ (ds :: Calc.Calc) ->
+                 case ds of wild { Calc.Calc ds1 ds2 ds3 ds4 -> ds2 }) -}
+a72275677a38c7ac42d9ee130f98ecf9
+  result :: Calc.Calc -> GHC.Types.Double
+  RecSel Left Calc.Calc
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>m,
      Unfolding: InlineRule (1, True, False)
-                (\ (ds :: Calc.Calculation) ->
-                 case ds of wild { Calc.Calculation ds1 ds2 ds3 ds4 -> ds4 }) -}
-instance GHC.Generics.Generic [Calc.Calculation]
-  = Calc.$fGenericCalculation
-instance Data.Aeson.Types.ToJSON.ToJSON [Calc.Calculation]
-  = Calc.$fToJSONCalculation
+                (\ (ds :: Calc.Calc) ->
+                 case ds of wild { Calc.Calc ds1 ds2 ds3 ds4 -> ds4 }) -}
+instance GHC.Generics.Generic [Calc.Calc] = Calc.$fGenericCalc
+instance Data.Aeson.Types.ToJSON.ToJSON [Calc.Calc]
+  = Calc.$fToJSONCalc
 instance Data.Aeson.Types.ToJSON.ToJSON [Calc.Op] = Calc.$fToJSONOp
-family instance GHC.Generics.Rep [Calc.Calculation]
-  = Calc.Rep_Calculation
+family instance GHC.Generics.Rep [Calc.Calc] = Calc.Rep_Calc
 "SPEC/Calc $fSelectorMetaMetaSel @ ('Just
                                      "lOperand") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                         'GHC.Generics.DecidedLazy)
@@ -1713,7 +1695,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                      $dSingI1
                                      $dSingI2
                                      $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel3
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel3
 "SPEC/Calc $fSelectorMetaMetaSel @ ('Just
                                      "operator") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                         'GHC.Generics.DecidedLazy)
@@ -1732,7 +1714,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                      $dSingI1
                                      $dSingI2
                                      $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel1
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel1
 "SPEC/Calc $fSelectorMetaMetaSel @ ('Just
                                      "rOperand") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                         'GHC.Generics.DecidedLazy)
@@ -1751,7 +1733,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                      $dSingI1
                                      $dSingI2
                                      $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel2
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel2
 "SPEC/Calc $fSelectorMetaMetaSel @ ('Just
                                      "result") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                       'GHC.Generics.DecidedLazy)
@@ -1770,7 +1752,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                      $dSingI1
                                      $dSingI2
                                      $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel
 "SPEC/Calc $fSelectorMetaMetaSel_$cselName @ ('Just
                                                "lOperand") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                                             'GHC.Generics.DecidedLazy)
@@ -1790,7 +1772,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                                $dSingI1
                                                $dSingI2
                                                $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName3
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName3
 "SPEC/Calc $fSelectorMetaMetaSel_$cselName @ ('Just
                                                "operator") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                                             'GHC.Generics.DecidedLazy)
@@ -1810,7 +1792,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                                $dSingI1
                                                $dSingI2
                                                $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName1
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName1
 "SPEC/Calc $fSelectorMetaMetaSel_$cselName @ ('Just
                                                "rOperand") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                                             'GHC.Generics.DecidedLazy)
@@ -1830,7 +1812,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                                $dSingI1
                                                $dSingI2
                                                $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName2
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName2
 "SPEC/Calc $fSelectorMetaMetaSel_$cselName @ ('Just
                                                "result") @ 'NoSourceUnpackedness @ 'NoSourceStrictness @ 'DecidedLazy" [ALWAYS] forall ($dSingI3 :: GHC.Generics.SingI
                                                                                                                                                                                                           'GHC.Generics.DecidedLazy)
@@ -1850,7 +1832,7 @@ family instance GHC.Generics.Rep [Calc.Calculation]
                                                $dSingI1
                                                $dSingI2
                                                $dSingI3
-  = Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel_$cselName
+  = Calc.$fToJSONCalc_$s$fSelectorMetaMetaSel_$cselName
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
