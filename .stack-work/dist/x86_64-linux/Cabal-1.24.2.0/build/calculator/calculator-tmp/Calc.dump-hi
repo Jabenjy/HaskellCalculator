@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-22 12:17:20.612131 UTC
+2017-05-02 20:53:44.389148 UTC
 
 interface main@main:Calc [family instance module] 8002
-  interface hash: 0979ad9b7885eb7a73b651abc08cf53a
-  ABI hash: 468c3216f3dbededab7a6e1021bc8e82
+  interface hash: 1238cfefef7fab305e34dfdaf789d521
+  ABI hash: 2ec384677176af7518e0a4b6ae13bf71
   export-list hash: 100d0a73c6c16e40617714fbb2e3262e
   orphan hash: 07e9f9ae33077e1421af72b2d29f5e93
   flag hash: 63f5645a5e4b8d81a30b8163558f9afc
@@ -87,7 +87,7 @@ import  -/  aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU:Data.Aeson a76bef
 import  -/  aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU:Data.Aeson.Types.ToJSON e53f43051bb77ea718c22d27eb28abcb
 import  -/  base-4.9.1.0:GHC.Generics 1dbec2bc7dd1c5bd8c89ed857eaed19b
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fGenericCalculation :: GHC.Generics.Generic Calc.Calculation
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -95,7 +95,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                   @ Calc.Calculation
                   Calc.$fGenericCalculation_$cfrom
                   Calc.$fGenericCalculation_$cto -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fGenericCalculation1 ::
     Calc.Calculation
     -> GHC.Generics.M1
@@ -133,7 +133,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                                   'GHC.Generics.NoSourceUnpackedness
                                                   'GHC.Generics.NoSourceStrictness
                                                   'GHC.Generics.DecidedLazy)
-                                               (GHC.Generics.K1 GHC.Generics.R GHC.Types.Float)))
+                                               (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double)))
          x
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U)>m,
      Unfolding: InlineRule (1, True, False)
@@ -171,7 +171,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                              'GHC.Generics.NoSourceUnpackedness
                                              'GHC.Generics.NoSourceStrictness
                                              'GHC.Generics.DecidedLazy)
-                                          (GHC.Generics.K1 GHC.Generics.R GHC.Types.Float))
+                                          (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double))
                     @ x
                     (GHC.Generics.:*:
                        @ (GHC.Generics.M1
@@ -233,7 +233,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                'GHC.Generics.NoSourceUnpackedness
                                'GHC.Generics.NoSourceStrictness
                                'GHC.Generics.DecidedLazy)
-                            (GHC.Generics.K1 GHC.Generics.R GHC.Types.Float))
+                            (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double))
                        @ x
                        g3
                          `cast`
@@ -251,7 +251,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                          `cast`
                        (Trans
                             (Sym (GHC.Generics.N:K1[0]
-                                      <GHC.Generics.R>_P <GHC.Types.Float>_R <x>_P))
+                                      <GHC.Generics.R>_P <GHC.Types.Double>_R <x>_P))
                             (Sym (GHC.Generics.N:M1[0]
                                       <GHC.Generics.S>_P
                                       <'GHC.Generics.MetaSel
@@ -259,7 +259,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                          'GHC.Generics.NoSourceUnpackedness
                                          'GHC.Generics.NoSourceStrictness
                                          'GHC.Generics.DecidedLazy>_P
-                                      <GHC.Generics.K1 GHC.Generics.R GHC.Types.Float>_R) <x>_N))))
+                                      <GHC.Generics.K1 GHC.Generics.R GHC.Types.Double>_R) <x>_N))))
                    `cast`
                  (Sym (GHC.Generics.N:M1[0]
                            <GHC.Generics.C>_P
@@ -298,8 +298,8 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                                                     'GHC.Generics.DecidedLazy)
                                                                  (GHC.Generics.K1
                                                                     GHC.Generics.R
-                                                                    GHC.Types.Float))>_R) <x>_N) }) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+                                                                    GHC.Types.Double))>_R) <x>_N) }) -}
+5f35ba4e92a55449f60ca3f41f676f45
   $fGenericCalculation_$cfrom ::
     Calc.Calculation -> GHC.Generics.Rep Calc.Calculation x
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U,U)>m,
@@ -352,9 +352,9 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                                                                 'GHC.Generics.DecidedLazy)
                                                                              (GHC.Generics.K1
                                                                                 GHC.Generics.R
-                                                                                GHC.Types.Float)))>_R))
+                                                                                GHC.Types.Double)))>_R))
                           (Sub (Sym (Calc.Rep_Calculation[0]))) <x>_N) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fGenericCalculation_$cto ::
     GHC.Generics.Rep Calc.Calculation x -> Calc.Calculation
   {- Arity: 1, HasNoCafRefs,
@@ -410,7 +410,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                                                                  'GHC.Generics.DecidedLazy)
                                                                               (GHC.Generics.K1
                                                                                  GHC.Generics.R
-                                                                                 GHC.Types.Float)))>_R)
+                                                                                 GHC.Types.Double)))>_R)
                                 (GHC.Generics.N:M1[0]
                                      <GHC.Generics.C>_P
                                      <'GHC.Generics.MetaCons
@@ -450,7 +450,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                                                               'GHC.Generics.DecidedLazy)
                                                                            (GHC.Generics.K1
                                                                               GHC.Generics.R
-                                                                              GHC.Types.Float))>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
+                                                                              GHC.Types.Double))>_R)) <x>_N) of wild { GHC.Generics.:*: ds1 ds2 ->
                  case ds1 of wild1 { GHC.Generics.:*: ds3 ds4 ->
                  case ds2 of wild2 { GHC.Generics.:*: ds5 ds6 ->
                  Calc.Calculation
@@ -500,10 +500,10 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                 'GHC.Generics.NoSourceUnpackedness
                                 'GHC.Generics.NoSourceStrictness
                                 'GHC.Generics.DecidedLazy>_P
-                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Float>_R <x>_N)
+                             <GHC.Generics.K1 GHC.Generics.R GHC.Types.Double>_R <x>_N)
                         (GHC.Generics.N:K1[0]
-                             <GHC.Generics.R>_P <GHC.Types.Float>_R <x>_P)) } } }) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+                             <GHC.Generics.R>_P <GHC.Types.Double>_R <x>_P)) } } }) -}
+5f35ba4e92a55449f60ca3f41f676f45
   $fToJSONCalculation ::
     Data.Aeson.Types.ToJSON.ToJSON Calc.Calculation
   DFunId
@@ -514,7 +514,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                   Calc.$fToJSONCalculation_$ctoEncoding
                   Calc.$fToJSONCalculation_$ctoJSONList
                   Calc.$fToJSONCalculation_$ctoEncodingList -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fToJSONCalculation1 ::
     Calc.Calculation
     -> Data.Tagged.Tagged
@@ -612,12 +612,12 @@ c9483703f7c5c7e6f21c433ac28be8c5
 48aee3c401e6115aaa3c28043951cc3b
   $fToJSONCalculation19 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "rOperand"#) -}
-51b34e64d5391cf202291db3b91482e7
+c548bf49fe0b863d6fbc413926c013f3
   $fToJSONCalculation2 ::
     Data.Aeson.Types.Internal.Options
     -> Data.Aeson.Types.ToJSON.ToArgs
          Data.Aeson.Types.Internal.Value Data.Aeson.Types.Generic.Zero a1
-    -> GHC.Generics.K1 GHC.Generics.R GHC.Types.Float a1
+    -> GHC.Generics.K1 GHC.Generics.R GHC.Types.Double a1
     -> Data.Aeson.Types.Internal.Value
   {- Arity: 3, Strictness: <L,A><L,A><S(S),1*U(U)>,
      Unfolding: InlineRule (3, True, True)
@@ -625,12 +625,12 @@ c9483703f7c5c7e6f21c433ac28be8c5
                    (_opts :: Data.Aeson.Types.Internal.Options)
                    (ds :: Data.Aeson.Types.ToJSON.ToArgs
                             Data.Aeson.Types.Internal.Value Data.Aeson.Types.Generic.Zero a1)
-                   (eta :: GHC.Generics.K1 GHC.Generics.R GHC.Types.Float a1) ->
-                 Data.Aeson.Types.ToJSON.$fToJSONFloat_$srealFloatToJSON
+                   (eta :: GHC.Generics.K1 GHC.Generics.R GHC.Types.Double a1) ->
+                 Data.Aeson.Types.ToJSON.$fToJSONDouble_$srealFloatToJSON
                    eta
                      `cast`
                    (GHC.Generics.N:K1[0]
-                        <GHC.Generics.R>_P <GHC.Types.Float>_R <a1>_P)) -}
+                        <GHC.Generics.R>_P <GHC.Types.Double>_R <a1>_P)) -}
 a3d4603cb8bc3d69160d8d1a1092c7ca
   $fToJSONCalculation20 ::
     Data.Aeson.Types.Internal.Options
@@ -754,7 +754,7 @@ be1da3fda4253dc221b53f4f90b494e9
   {- Unfolding: (case Data.Text.Show.unpackCString#
                         "*"# of dt1 { Data.Text.Internal.Text ipv ipv1 ipv2 ->
                  Data.Aeson.Types.Internal.String dt1 }) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fToJSONCalculation_$ctoEncoding ::
     Calc.Calculation -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U(U,U,U,U)>,
@@ -763,7 +763,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                 (\ (eta :: Calc.Calculation) ->
                  Data.Aeson.Encoding.Internal.value
                    (Calc.$fToJSONCalculation_$ctoJSON eta)) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fToJSONCalculation_$ctoEncodingList ::
     [Calc.Calculation] -> Data.Aeson.Encoding.Internal.Encoding
   {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
@@ -828,7 +828,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                         `cast`
                       (Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
                                 <Data.Aeson.Types.Internal.Value>_P)) }) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fToJSONCalculation_$ctoJSON ::
     Calc.Calculation -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U(U,U,U,U)>m1,
@@ -851,7 +851,7 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                    Calc.Minus -> Calc.$fToJSONCalculation10
                    Calc.Multiply -> Calc.$fToJSONCalculation9
                    Calc.Divide -> Calc.$fToJSONCalculation8 }) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   $fToJSONCalculation_$ctoJSONList ::
     [Calc.Calculation] -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE (sat-args=0),
@@ -1458,18 +1458,18 @@ f7b0d70fde9ebece51b83b0ee684a2c8
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-1e2aa2c2e118fb0582c7517468a487ba
+27d9c49810af5f5a315d63df4aa88de0
   $w$ctoJSON ::
     GHC.Types.Int
     -> GHC.Types.Int
     -> Calc.Op
-    -> GHC.Types.Float
+    -> GHC.Types.Double
     -> (# Data.Aeson.Types.Internal.Object #)
   {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>, Inline: [0],
      Unfolding: (\ (ww :: GHC.Types.Int)
                    (ww1 :: GHC.Types.Int)
                    (ww2 :: Calc.Op)
-                   (ww3 :: GHC.Types.Float) ->
+                   (ww3 :: GHC.Types.Double) ->
                  case Data.Aeson.Types.Internal.$sfromList1
                         @ Data.Aeson.Types.Internal.Value
                         (Data.Aeson.Types.ToJSON.$fRecordToPairsarityM2
@@ -1578,13 +1578,13 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                          'GHC.Generics.NoSourceStrictness
                                          'GHC.Generics.DecidedLazy)
                                     @ Data.Aeson.Types.Generic.Zero
-                                    @ (GHC.Generics.K1 GHC.Generics.R GHC.Types.Float)
+                                    @ (GHC.Generics.K1 GHC.Generics.R GHC.Types.Double)
                                     Calc.$fToJSONCalculation_$s$fSelectorMetaMetaSel
                                     Calc.$fToJSONCalculation2
                                       `cast`
                                     (Sym (Data.Aeson.Types.ToJSON.N:GToJSON[0]
                                               <Data.Aeson.Types.Generic.Zero>_N
-                                              <GHC.Generics.K1 GHC.Generics.R GHC.Types.Float>_N))
+                                              <GHC.Generics.K1 GHC.Generics.R GHC.Types.Double>_N))
                                     @ GHC.Prim.Any
                                     Calc.$fToJSONCalculation_w2
                                     (Data.Aeson.Types.ToJSON.$WNoToArgs
@@ -1595,7 +1595,7 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                     (Trans
                                          (Sym (GHC.Generics.N:K1[0]
                                                    <GHC.Generics.R>_P
-                                                   <GHC.Types.Float>_R
+                                                   <GHC.Types.Double>_R
                                                    <GHC.Prim.Any>_P))
                                          (Sym (GHC.Generics.N:M1[0]
                                                    <GHC.Generics.S>_P
@@ -1606,21 +1606,21 @@ f7b0d70fde9ebece51b83b0ee684a2c8
                                                       'GHC.Generics.DecidedLazy>_P
                                                    <GHC.Generics.K1
                                                       GHC.Generics.R
-                                                      GHC.Types.Float>_R) <GHC.Prim.Any>_N))
+                                                      GHC.Types.Double>_R) <GHC.Prim.Any>_N))
                                     (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair)))))
                         (Data.HashMap.Base.Empty
                            @ Data.Text.Internal.Text
                            @ Data.Aeson.Types.Internal.Value) of dt1 { DEFAULT ->
                  (# dt1 #) }) -}
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   data Calculation
     = Calculation {lOperand :: GHC.Types.Int,
                    rOperand :: GHC.Types.Int,
                    operator :: Calc.Op,
-                   result :: GHC.Types.Float}
+                   result :: GHC.Types.Double}
 597d3e1391c768309ad3b80a6ccc4a28
   data Op = Plus | Minus | Multiply | Divide
-bcf5c6b092c2454f1d590c4ca399c5cd
+5f35ba4e92a55449f60ca3f41f676f45
   axiom Rep_Calculation::
       GHC.Generics.Rep Calc.Calculation
         = GHC.Generics.D1
@@ -1656,8 +1656,8 @@ bcf5c6b092c2454f1d590c4ca399c5cd
                                                         'GHC.Generics.NoSourceUnpackedness
                                                         'GHC.Generics.NoSourceStrictness
                                                         'GHC.Generics.DecidedLazy)
-                                                     (GHC.Generics.Rec0 GHC.Types.Float))))
-c54be134b9a2c2ae0db499c744940788
+                                                     (GHC.Generics.Rec0 GHC.Types.Double))))
+79cf243e0b6bc076f7ca141a40438471
   lOperand :: Calc.Calculation -> GHC.Types.Int
   RecSel Left Calc.Calculation
   {- Arity: 1, HasNoCafRefs,
@@ -1665,14 +1665,14 @@ c54be134b9a2c2ae0db499c744940788
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Calc.Calculation) ->
                  case ds of wild { Calc.Calculation ds1 ds2 ds3 ds4 -> ds1 }) -}
-f48581989b10d43e8e045b4ae1a39c58
+1429cc755c8bb224fbbd8fbe6652332f
   operator :: Calc.Calculation -> Calc.Op
   RecSel Left Calc.Calculation
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U,A)>,
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Calc.Calculation) ->
                  case ds of wild { Calc.Calculation ds1 ds2 ds3 ds4 -> ds3 }) -}
-c6a2a28c2247828d05d7d4d3d55d9a3c
+7385e097b6204d52ce78f263136b6f4e
   rOperand :: Calc.Calculation -> GHC.Types.Int
   RecSel Left Calc.Calculation
   {- Arity: 1, HasNoCafRefs,
@@ -1680,8 +1680,8 @@ c6a2a28c2247828d05d7d4d3d55d9a3c
      Unfolding: InlineRule (1, True, False)
                 (\ (ds :: Calc.Calculation) ->
                  case ds of wild { Calc.Calculation ds1 ds2 ds3 ds4 -> ds2 }) -}
-5f320c25f966306b99f50d1a65874b29
-  result :: Calc.Calculation -> GHC.Types.Float
+16d58df2947d07ae18a8df1e6142e7aa
+  result :: Calc.Calculation -> GHC.Types.Double
   RecSel Left Calc.Calculation
   {- Arity: 1, HasNoCafRefs,
      Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>m,

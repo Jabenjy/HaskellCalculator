@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-03-22 12:17:24.882275 UTC
+2017-05-02 20:53:45.263083 UTC
 
 interface main@main:Div 8002
-  interface hash: d7ac37066633f369e281ad6873c2151e
-  ABI hash: 8bf40611bae355f5490604a87ca427e6
-  export-list hash: c5a2c4f6bbc8bb396df33ceb251feb1a
+  interface hash: 9f8daaed9303b2a2000f82449dd1cc5f
+  ABI hash: 5275e05fd6bf74f10797311b48b77a56
+  export-list hash: 57e286e5a27de6630243d34d969584ef
   orphan hash: 6e6bd6c5833bd85af6070b910c1878d6
   flag hash: 0c166353a54cf00f9d34716f58e85a92
   sig of: Nothing
@@ -13,8 +13,9 @@ interface main@main:Div 8002
   where
 exports:
   Div.getDivR
-module dependencies: Calc Foundation
+module dependencies: Calc DBHandler Foundation
 package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
+                      aeson-compat-0.3.6@aeson-compat-0.3.6-Aq6oxgSGK87IxSvwdLz4Tw
                       ansi-terminal-0.6.2.3@ansi-terminal-0.6.2.3-4HPxin1iv6RAndS8lH3nzo
                       appar-0.1.4@appar-0.1.4-DGWHHt2WRn9FI49prcwO9
                       array-0.5.1.1@array-0.5.1.1
@@ -59,6 +60,7 @@ package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
                       filepath-1.4.1.1@filepath-1.4.1.1
                       ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
                       hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4
+                      http-api-data-0.3.5@http-api-data-0.3.5-3AuNmJIQrFpFAo17EGCjDT
                       http-date-0.0.6.1@http-date-0.0.6.1-I9CE9BHCJzIDsnojCE46i
                       http-types-0.9.1@http-types-0.9.1-5F2YjZNOfOTCho80klHZFM
                       http2-1.6.3@http2-1.6.3-AztirFAAzjluWi6d9XlAh integer-gmp-1.0.0.1
@@ -77,16 +79,21 @@ package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
                       old-time-1.1.0.3@old-time-1.1.0.3-KWRsMSdY26c2L27Y9n9cyq
                       parsec-3.1.11@parsec-3.1.11-113irVHGgd88sRnywByDNw
                       path-pieces-0.2.1@path-pieces-0.2.1-7jYjtDsNHN0JfYriIYgB3j
+                      persistent-2.6@persistent-2.6-LrGGvJVAMcv5paHHa498aM
+                      persistent-sqlite-2.6@persistent-sqlite-2.6-Fb51fZ81QGf9geKLdaVUQm
+                      persistent-template-2.5.1.6@persistent-template-2.5.1.6-GhjGoq8mqKsJNl0zkvA4B8
                       pretty-1.1.3.3@pretty-1.1.3.3
                       primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
                       process-1.4.3.0@process-1.4.3.0
                       psqueues-0.2.2.3@psqueues-0.2.2.3-GauKnoBPgvr4cpGo1pqheE
                       random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      resource-pool-0.2.3.2@resource-pool-0.2.3.2-DBgmZYXlKazI2NEJ1zhRAp
                       resourcet-1.1.9@resourcet-1.1.9-Ej57FoSD8NQLck5u9CwWz8
                       safe-0.3.14@safe-0.3.14-GsbXn9D9F3BDazVNcErzdQ
                       scientific-0.3.4.10@scientific-0.3.4.10-HRQd1hS6vMV6hvjSlMi8B0
                       securemem-0.1.9@securemem-0.1.9-FQ93Du3uTKqAPA7yXIwJ88
                       shakespeare-2.0.12.1@shakespeare-2.0.12.1-7zylhH6EvxxByWoabG0aiC
+                      silently-1.2.5@silently-1.2.5-HsbqnAAyIOA8viZ4Sccs0a
                       simple-sendfile-0.2.25@simple-sendfile-0.2.25-JJ9zm1wZxYIARxlVa3oQgs
                       skein-1.0.9.4@skein-1.0.9.4-1r9hT02ZzU5HeQ9SvXvQV
                       stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
@@ -104,6 +111,7 @@ package dependencies: aeson-1.0.2.1@aeson-1.0.2.1-1PgNnQdZpa7BG8cq9P3bMU
                       unix-compat-0.4.3.1@unix-compat-0.4.3.1-Ausmw6d7KIwA7sl52mzqxC
                       unix-time-0.3.7@unix-time-0.3.7-EhnEKT4D7hJajV74Sk5BE
                       unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM
+                      uuid-types-1.0.3@uuid-types-1.0.3-7DISMfTGMIwFRGIC3QM3tK
                       vault-0.3.0.6@vault-0.3.0.6-LaXzEmUAZNyLZeEpsXBRv2
                       vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG
                       wai-3.2.1.1@wai-3.2.1.1-8NcmuA9FbmNFdjqmYFUkuU
@@ -124,6 +132,10 @@ orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8FbfXxE1:Data.Att
          data-default-instances-old-locale-0.0.1@data-default-instances-old-locale-0.0.1-9zaGDEmgOixKkmLylWdN5l:Data.Default.Instances.OldLocale
          hashable-1.2.5.0@hashable-1.2.5.0-F4MWeNuv2sjJRqBd2T5ul4:Data.Hashable.Generic
          network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         persistent-2.6@persistent-2.6-LrGGvJVAMcv5paHHa498aM:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.6@persistent-2.6-LrGGvJVAMcv5paHHa498aM:Database.Persist.Sql.Orphan.PersistStore
+         persistent-2.6@persistent-2.6-LrGGvJVAMcv5paHHa498aM:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-template-2.5.1.6@persistent-template-2.5.1.6-GhjGoq8mqKsJNl0zkvA4B8:Database.Persist.TH
          stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
          text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text
          text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
@@ -154,10 +166,14 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8
                          ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
                          iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Addr
                          iproute-1.7.1@iproute-1.7.1-4HULutk0xITKNjI1pwYrD4:Data.IP.Range
-                         main@main:Calc main@main:Foundation
+                         main@main:Calc main@main:DBHandler main@main:Foundation
                          monad-control-1.0.1.0@monad-control-1.0.1.0-LQwQ0Hi5p0oAccTfTzbfD5:Control.Monad.Trans.Control
                          monad-logger-0.3.20.2@monad-logger-0.3.20.2-B79xNS1OLE07RmfN9nQT1y:Control.Monad.Logger
                          mwc-random-0.13.5.0@mwc-random-0.13.5.0-Dp3Ri46ZxJuCFZWIowNqha:System.Random.MWC
+                         persistent-2.6@persistent-2.6-LrGGvJVAMcv5paHHa498aM:Database.Persist.Class.PersistConfig
+                         persistent-2.6@persistent-2.6-LrGGvJVAMcv5paHHa498aM:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.6@persistent-2.6-LrGGvJVAMcv5paHHa498aM:Database.Persist.Sql.Types.Internal
+                         persistent-sqlite-2.6@persistent-sqlite-2.6-Fb51fZ81QGf9geKLdaVUQm:Database.Persist.Sqlite
                          pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
                          pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
                          primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
@@ -170,6 +186,8 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8
                          text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text.Lazy
                          unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashMap.Base
                          unordered-containers-0.2.7.2@unordered-containers-0.2.7.2-8AmrySQXjRGF6VciYs51fM:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-7DISMfTGMIwFRGIC3QM3tK:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-7DISMfTGMIwFRGIC3QM3tK:Data.UUID.Types.Internal.Builder
                          vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector
                          vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Primitive
                          vector-0.11.0.0@vector-0.11.0.0-LMwQhhnXj8U3T5Bm1JFxG:Data.Vector.Storable
@@ -179,15 +197,17 @@ family instance modules: attoparsec-0.13.1.0@attoparsec-0.13.1.0-HCAgpBrKCLJ5li8
                          yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Internal.LiteApp
                          yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Types
                          zlib-0.6.1.2@zlib-0.6.1.2-7negTfm2ujt1gW4wr40MUp:Codec.Compression.Zlib.Stream
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy:Text.Blaze.Html 288dbf097dbd0ff17b50c3c1330477db
 import  -/  blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT:Text.Blaze.Internal 52ba665013f4dfa6d731e8584348806e
-import  -/  Calc 468c3216f3dbededab7a6e1021bc8e82
+import  -/  Calc 2ec384677176af7518e0a4b6ae13bf71
   exports: 100d0a73c6c16e40617714fbb2e3262e
-  Calculation da0ab53d6e1fe47dacc2b5c2cd169eda
-  Divide 3681be3e1c6667a4c3410dd812d65087
+import  -/  DBHandler 2f19d05b7bd5605e2db4308f81e54707
+  exports: 7252910cee20c96a9b1e4c2ebad38e55
+  insertDB 361b2098cb7859f85b08a827989f6709
 import  -/  Foundation 3615fb1983cc7b6b55ded8cf18378edf
   exports: ded409159e04845416e78440edda8f02
   Handler b653624404f7ececddd0ff905d16f39a
@@ -195,7 +215,6 @@ import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a1
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core 08ddb845b011db38ae477be0fa9a5605
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Class.Yesod d29699d764c595518b54ba2a7ddc4701
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Handler 26cb5f7bd6b0a11233a7ac0f446d6706
-import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Json 03e718671a2fb17a94bb95b45b5ec942
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Types b4b549c3ca6a379d04c014cbfa11ee6e
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Widget 12947006899d2968832f0196fc260aca
 cc8392a02ffe6b5e4c528e257c37750d

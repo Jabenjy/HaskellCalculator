@@ -4,6 +4,7 @@ module Home where
 
 import Foundation
 import Yesod.Core
+import DBHandler
 
 getHomeR :: Handler Html
 getHomeR = defaultLayout $ do
@@ -14,3 +15,9 @@ getHomeR = defaultLayout $ do
         <p>
             <a href=@{AddR 5 7}?_accept=application/json>JSON addition
     |]
+
+getCalcsR :: Handler Html
+getCalcsR = defaultLayout $ do
+    setTitle "History"
+    [whamlet|<p>Hello</p>|]
+    liftIO $ selectDB

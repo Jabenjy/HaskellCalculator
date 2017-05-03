@@ -9,17 +9,19 @@ executable          calculator
   other-modules:    Application
                     Foundation
 
-                    Add
+                    Operations
                     Home
-                    Mult
-                    Div
-                    Sub
                     Calc
+                    DBHandler
 
   ghc-options:      -Wall -fwarn-tabs -O2
 
   build-depends:  base
+                , yesod
                 , yesod-core
                 , aeson
+                , persistent
+                , persistent-sqlite
+                , persistent-template
 
   ghc-options:    -threaded -O2 -rtsopts -with-rtsopts=-N

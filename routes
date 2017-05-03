@@ -1,4 +1,5 @@
 /              HomeR GET
+/calcs         CalcsR GET
 /add/#Int/#Int AddR  GET
 /mult/#Int/#Int MultR GET
 /div/#Int/#Int DivR GET

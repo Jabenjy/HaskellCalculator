@@ -17,7 +17,7 @@ data Calculation = Calculation {
   lOperand :: Int,
   rOperand :: Int,
   operator :: Op,
-  result :: Float
+  result :: Double
 } deriving (Generic)
 
 instance ToJSON Calculation

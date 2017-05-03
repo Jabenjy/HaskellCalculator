@@ -8,10 +8,7 @@ module Application where
 import Foundation
 import Yesod.Core
 
-import Add
-import Sub
+import Operations
 import Home
-import Mult
-import Div
 
 mkYesodDispatch "App" resourcesApp

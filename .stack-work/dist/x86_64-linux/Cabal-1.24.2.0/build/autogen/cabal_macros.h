@@ -21,6 +21,34 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package persistent-2.6 */
+#define VERSION_persistent "2.6"
+#define MIN_VERSION_persistent(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  6 || \
+  (major1) == 2 && (major2) == 6 && (minor) <= 0)
+
+/* package persistent-sqlite-2.6 */
+#define VERSION_persistent_sqlite "2.6"
+#define MIN_VERSION_persistent_sqlite(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  6 || \
+  (major1) == 2 && (major2) == 6 && (minor) <= 0)
+
+/* package persistent-template-2.5.1.6 */
+#define VERSION_persistent_template "2.5.1.6"
+#define MIN_VERSION_persistent_template(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  5 || \
+  (major1) == 2 && (major2) == 5 && (minor) <= 1)
+
+/* package yesod-1.4.4 */
+#define VERSION_yesod "1.4.4"
+#define MIN_VERSION_yesod(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  4 || \
+  (major1) == 1 && (major2) == 4 && (minor) <= 4)
+
 /* package yesod-core-1.4.31 */
 #define VERSION_yesod_core "1.4.31"
 #define MIN_VERSION_yesod_core(major1,major2,minor) (\
