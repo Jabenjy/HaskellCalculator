@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2017-05-04 12:04:39.179692 UTC
+2017-05-04 12:21:58.824925 UTC
 
 interface main@main:Home 8002
-  interface hash: c3aef95c33ef04c8ef2068980e3be60e
+  interface hash: 9a05a1cd5a09e45e3a1ccf19490a2cec
   ABI hash: 46dd3c842cf645c58c3b333b8444c898
   export-list hash: b542fc35732a05f021908d500b9f7af6
   orphan hash: b86121abfb805f098e349b4a4a084368
@@ -215,10 +215,9 @@ import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
 import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  blaze-html-0.8.1.3@blaze-html-0.8.1.3-4x5sR7CihaZBuBa398ibiy:Text.Blaze.Html 288dbf097dbd0ff17b50c3c1330477db
-import  -/  blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT:Text.Blaze e36927cead1a7aeccd029225c1dba5b4
 import  -/  blaze-markup-0.7.1.1@blaze-markup-0.7.1.1-7tIWNv8iALFJhJ4kVxNmNT:Text.Blaze.Internal 52ba665013f4dfa6d731e8584348806e
-import  -/  DBHandler 50823f1d7af6c1f78d53952642c2112b
-  exports: 07f29d266ea0797a55d0b3cfbba3a194
+import  -/  DBHandler a2c2eecc660ef4aa4f644b4ec29b6ac0
+  exports: 702cfa092e9abf8878a35256c1abedc9
   Calculation 7a0b4f2264ef267af6bf1ef4be43f00b
   selectDB a523bdad9d78acb9e21d93071dcdb1e7
 import  -/  Foundation 7c5cb8d2d2f81f02c1aee84cd8055328
@@ -228,7 +227,6 @@ import  -/  Foundation 7c5cb8d2d2f81f02c1aee84cd8055328
 import  -/  shakespeare-2.0.12.1@shakespeare-2.0.12.1-7zylhH6EvxxByWoabG0aiC:Text.Css 254ce281fd7f01cdbf67979ea26d57e6
 import  -/  shakespeare-2.0.12.1@shakespeare-2.0.12.1-7zylhH6EvxxByWoabG0aiC:Text.Lucius 544cb4d81de3b90faefe5ed830fb5c84
 import  -/  text-1.2.2.1@text-1.2.2.1-Ji7hMs2U4BkBwavd4taEVR:Data.Text 9ba4693a108b74a0b1eb8f7d38f1abee
-import  -/  yesod-1.4.4@yesod-1.4.4-fP6pgHjDfaDH6EIhwCrpO:Yesod 5a98cae3b936be32fe83dc9365ea9383
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core 08ddb845b011db38ae477be0fa9a5605
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Class.Yesod d29699d764c595518b54ba2a7ddc4701
 import  -/  yesod-core-1.4.31@yesod-core-1.4.31-DLiX005mSrG8ItA7Sozqvl:Yesod.Core.Handler 26cb5f7bd6b0a11233a7ac0f446d6706

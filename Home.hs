@@ -5,10 +5,7 @@ module Home where
 
 import Foundation
 import Yesod.Core
-import Yesod
 import DBHandler
-import Text.Blaze
-import Data.Text (Text)
 import  Text.Lucius
 
 getHomeR :: Handler Html

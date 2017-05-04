@@ -8,14 +8,9 @@
 {-# LANGUAGE TemplateHaskell            #-}
 {-# LANGUAGE TypeFamilies               #-}
 module DBHandler where
-import Foundation
 import Yesod
-import Network.HTTP.Types
--- import Database.Persist
--- import Database.Persist.TH
 import Database.Persist.Sqlite
 import Control.Monad.IO.Class (liftIO)
-import Control.Monad.Trans.Control
 
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
 Calculation
@@ -53,4 +48,4 @@ selectDB = runSqlite "calculations.db" $ do
     where
       getCalculations (Entity _ x) = x
 
-getJsonCalcs a = toJSON a
+-- getJsonCalcs a = toJSON a
