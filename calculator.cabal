@@ -26,5 +26,8 @@ executable          calculator
                 , http-types
                 , monad-control
                 , blaze-markup
+                , text
+                , shakespeare
+
 
   ghc-options:    -threaded -O2 -rtsopts -with-rtsopts=-N

@@ -63,6 +63,20 @@
   (major1) == 2 && (major2) <  5 || \
   (major1) == 2 && (major2) == 5 && (minor) <= 1)
 
+/* package shakespeare-2.0.12.1 */
+#define VERSION_shakespeare "2.0.12.1"
+#define MIN_VERSION_shakespeare(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  0 || \
+  (major1) == 2 && (major2) == 0 && (minor) <= 12)
+
+/* package text-1.2.2.1 */
+#define VERSION_text "1.2.2.1"
+#define MIN_VERSION_text(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  2 || \
+  (major1) == 1 && (major2) == 2 && (minor) <= 2)
+
 /* package yesod-1.4.4 */
 #define VERSION_yesod "1.4.4"
 #define MIN_VERSION_yesod(major1,major2,minor) (\

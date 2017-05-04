@@ -1,12 +1,15 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE QuasiQuotes           #-}
+{-# LANGUAGE TemplateHaskell#-}
 module Home where
 
 import Foundation
 import Yesod.Core
+import Yesod
 import DBHandler
 import Text.Blaze
-
+import Data.Text (Text)
+import  Text.Lucius
 
 getHomeR :: Handler Html
 getHomeR = defaultLayout $ do
@@ -21,14 +24,15 @@ getHomeR = defaultLayout $ do
 getCalcsR :: Handler Html
 getCalcsR = defaultLayout $ do
     setTitle "History"
-    let calcs = selectDB
-    setTitle "History"
-    toWidget[whamlet|
+    calcs <- liftIO $ selectDB
+    [whamlet|
+    <div> Hello
     <div>
-      $forall Calculation a b c d <- calcs
-        <dl>
-          <dt>#{show a}
-          <dt>#{show b}
-          <dt>#{show c}
-          <dt>#{show d}
+      $forall Calculation lOp rOp oper res <- calcs
+        <ul>
+          <li>#{show lOp}
+          <li>#{show oper}
+          <li>#{show rOp}
+          <li> = #{show res}
     |]
+    toWidget $(luciusFile "style.lucius")
