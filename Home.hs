@@ -13,22 +13,28 @@ getHomeR = defaultLayout $ do
     setTitle "Minimal Multifile"
     [whamlet|
         <p>
-            <a href=@{AddR 5 7}>HTML addition
+            <a href=@{AddR 5 7}>Addition
         <p>
-            <a href=@{AddR 5 7}?_accept=application/json>JSON addition
+            <a href=@{MultR 5 7}>Multiplication
+        <p>
+            <a href=@{SubR 5 7}>Subtraction
+        <p>
+            <a href=@{DivR 5 7}>Division
+        <p>
+            <a href=@{CalcsR}>History
     |]
 
 getCalcsR :: Handler Html
 getCalcsR = defaultLayout $ do
-    setTitle "History"
+    setTitle "Calculations"
     calcs <- liftIO $ selectDB
     [whamlet|
-    <div> Hello
+    <div> Here are all of the calculations stored in the database:
     <div>
       $forall Calculation lOp rOp oper res <- calcs
         <ul>
           <li>#{show lOp}
-          <li>#{show oper}
+          <li>#{oper}
           <li>#{show rOp}
           <li> = #{show res}
     |]

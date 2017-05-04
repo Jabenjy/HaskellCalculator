@@ -12,46 +12,41 @@ getAddR x y = selectRep $ do
     provideRep $ defaultLayout $ do
         setTitle "Addition"
         [whamlet|#{x} + #{y} = #{z}|]
-    --provideJson $ c
         liftIO $ insertDB x y "+" z
+    provideJson $ c
   where
     z = (fromIntegral x :: Double) + (fromIntegral y :: Double)
-    -- c = Calculation x y Plus a
+    c = Calc x y Plus z
 
 getSubR :: Int -> Int -> Handler TypedContent
 getSubR x y = selectRep $ do
     provideRep $ defaultLayout $ do
       setTitle "Subtraction"
       [whamlet|#{x} - #{y} = #{z}|]
-    --provideJson $ c
       liftIO $ insertDB x y "-" z
+    provideJson $ c
   where
     z = (fromIntegral x :: Double) - (fromIntegral y :: Double)
-    -- c = Calculation x y Minus a
-
+    c = Calc x y Minus z
 
 getDivR :: Int -> Int -> Handler TypedContent
 getDivR x y = selectRep $ do
     provideRep $ defaultLayout $ do
       setTitle "Division"
       [whamlet|#{x} / #{y} = #{z}|]
-    -- provideJson $ c
       liftIO $ insertDB x y "/" z
+    provideJson $ c
   where
-    z = a / b
-      where
-        a = fromIntegral x :: Double
-        b = fromIntegral y :: Double
-    -- c = Calculation x y Divide fromDouble(z :: Float)
+    z = (fromIntegral x :: Double) / (fromIntegral y :: Double)
+    c = Calc x y Divide z
 
 getMultR :: Int -> Int -> Handler TypedContent
 getMultR x y = selectRep $ do
     provideRep $ defaultLayout $ do
       setTitle "Multiplication"
       [whamlet|#{x} * #{y} = #{z}|]
-    --provideJson $ c
-      liftIO $ insertDB x y "*" a
+      liftIO $ insertDB x y "*" z
+    provideJson $ c
   where
-    z = x * y
-    a = fromIntegral z :: Double
-    -- c = Calculation x y Multiply z
+    z = (fromIntegral x :: Double) * (fromIntegral y :: Double)
+    c = Calc x y Multiply z
